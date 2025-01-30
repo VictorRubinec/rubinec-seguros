@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Seguro Online</title>
+  <link rel="stylesheet" href="styles/index.css" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  />
+</head>
+<body>
+  <header id="header">
+    <img src="images/Rlogo.png" alt="Logo do site" class="logo" loading="lazy"/>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#home_image" class="nav-item">Início</a></li>
+        <li><a href="#home_about" class="nav-item">Sobre</a></li>
+        <li class="dropdown">
+          <a href="#services_for_you" class="nav-item dropbtn">Para Você ▼</a>
+          <div class="dropdown-content">
+            <div class="dropdown-section" id="dropdown-section-personal">
+            </div>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#services_for_enterprise" class="nav-item dropbtn">Empresas ▼</a>
+          <div class="dropdown-content">
+            <div class="dropdown-section" id="dropdown-section-enterprise">
+            </div>
+          </div>
+        </li>
+        <li><a href="#footer" class="nav-item">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home_image" class="banner-section">
+    <h1>Bem-vindo ao Seguro Online</h1>
+  </section>
+
+  <section id="home_about" class="about-section">
+    <div class="about-container">
+      <div class="about-text">
+        <h1>Sobre Nós</h1>
+        <p>Somos uma empresa dedicada a proteger o que importa para você e sua família. Oferecemos soluções de seguros personalizadas e acessíveis, sempre com transparência e excelência no atendimento.</p>
+        <p>Nossa missão é garantir a sua tranquilidade e segurança, protegendo bens, saúde e futuro.</p>
+      </div>
+      <div class="about-image">
+        <img src="images/about-image.jpg" alt="Sobre nós" loading="lazy"/>
+      </div>
+    </div>
+  </section>
+
+  <section id="home_insurances" class="insurances-section">
+    <div id="services_for_you" class="insurances">
+      <h1>Para você</h1>
+      <p>Conheça os nossos serviços e veja como podemos ajudar a proteger o que é importante para você.</p>
+      <hr class="title-line" />
+      <div class="insurances-container" id="insurances-personal"></div>
+    </div>
+    <div id="services_for_enterprise" class="insurances">
+      <h1>Empresas</h1>
+      <p>Conheça os nossos serviços e veja como podemos ajudar a proteger o que é importante para a sua empresa.</p>
+      <hr class="title-line" />
+      <div class="insurances-container" id="insurances-enterprise"></div>
+    </div>
+  </section>
+
+  <footer id="footer" class="footer">
+    <div class="footer-container">
+      <div class="footer-info">
+        <h2>Entre em Contato</h2>
+        <hr class="footer-line" />
+        <ul>
+          <li><strong>Endereço:</strong> Avenida Paulista, 1578 - Bela Vista, São Paulo, SP</li>
+          <li><strong>Telefone:</strong> (11) 98765-4321</li>
+          <li><strong>Email:</strong> contato@seguroonline.com.br</li>
+        </ul>
+      </div>
+      <div class="footer-map" id="map"></div>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Envie-nos uma mensagem</h3>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="email">Seu Email:</label>
+          <input type="email" id="email" name="email" placeholder="Seu email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Sua Mensagem:</label>
+          <textarea id="message" name="message" placeholder="Escreva sua mensagem aqui..." required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Enviar</button>
+      </form>
+    </div>
+
+    <p>© 2025 Seguro Online. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script> 
+  <script src="js/index/script.js" type="module"></script>
+</body>
+</html>
