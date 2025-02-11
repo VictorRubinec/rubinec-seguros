@@ -1,13 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div id="test-div"></div>
-    
-    <script src="js/insurance/script.js"></script>
-</body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/servico.css" />
+    <title>Seguro Online</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <a href="index.html">
+        <img
+          src="images/Rlogo.png"
+          alt="Logo do site"
+          class="logo"
+          loading="lazy"
+        />
+      </a>
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html#home_image" class="nav-item">Início</a></li>
+          <li><a href="index.html#home_about" class="nav-item">Sobre</a></li>
+          <li class="dropdown">
+            <a href="index.html#services_for_you" class="nav-item dropbtn">
+              Para Você ▼
+            </a>
+            <div class="dropdown-content">
+              <div
+                class="dropdown-section"
+                id="dropdown-section-personal"
+              ></div>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a
+              href="index.html#services_for_enterprise"
+              class="nav-item dropbtn"
+            >
+              Empresas ▼
+            </a>
+            <div class="dropdown-content">
+              <div
+                class="dropdown-section"
+                id="dropdown-section-enterprise"
+              ></div>
+            </div>
+          </li>
+          <li><a href="index.html#footer" class="nav-item">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <footer id="footer" class="footer">
+      <div class="footer-container">
+        <div class="footer-info">
+          <h2>Entre em Contato</h2>
+          <hr class="footer-line" />
+          <ul>
+            <li>
+              <strong>Endereço:</strong> Avenida Paulista, 1578 - Bela Vista,
+              São Paulo, SP
+            </li>
+            <li><strong>Telefone:</strong> (11) 98765-4321</li>
+            <li><strong>Email:</strong> contato@seguroonline.com.br</li>
+          </ul>
+        </div>
+        <div class="footer-map" id="map"></div>
+      </div>
+      <p>© 2025 Seguro Online. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/insurance/script.js" type="module"></script>
+    <script src="js/script.js" type="module"></script>
+  </body>
 </html>

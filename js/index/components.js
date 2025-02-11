@@ -2,7 +2,7 @@ const domain = "http://127.0.0.1:5500";
 
 export const insurancesItemsPersonal = [
   {
-    title: "Seguro de Carro",
+    title: "Seguro de Automóvel",
     description:
       "Seguro de Carro é um contrato que garante o pagamento de uma indenização.",
     image: "images/service-car.png",
@@ -23,11 +23,11 @@ export const insurancesItemsPersonal = [
     link: `${domain}/servico.html?seguro-residencial`,
   },
   {
-    title: "Seguro Viagem",
+    title: "Previdência Complementar",
     description:
-      "Seguro de Viagem é um contrato que garante o pagamento de uma indenização.",
-    image: "images/insurance-travel.png",
-    link: `${domain}/servico.html?seguro-de-viagem`,
+      "Previdência Complementar é um contrato que garante o pagamento de uma indenização.",
+    image: "images/insurance-pension.png",
+    link: `${domain}/servico.html?previdencia-complementar`,
   },
   {
     title: "Seguro de Vida",
@@ -37,18 +37,11 @@ export const insurancesItemsPersonal = [
     link: `${domain}/servico.html?seguro-de-vida`,
   },
   {
-    title: "Consórcio",
+    title: "Seguro Saúde",
     description:
-      "Consórcio é um contrato que garante o pagamento de uma indenização.",
-    image: "images/insurance-consortium.png",
-    link: `${domain}/servico.html?consorcio`,
-  },
-  {
-    title: "Financiamento",
-    description:
-      "Financiamento é um contrato que garante o pagamento de uma indenização.",
-    image: "images/insurance-financing.png",
-    link: `${domain}/servico.html?financiamento`,
+      "Seguro Saúde é um contrato que garante o pagamento de uma indenização.",
+    image: "images/insurance-health.png",
+    link: `${domain}/servico.html?seguro-saude`,
   },
   {
     title: "Responsabilidade Civil",
@@ -57,6 +50,34 @@ export const insurancesItemsPersonal = [
     image: "images/insurance-civil-responsibility.png",
     link: `${domain}/servico.html?responsabilidade-civil`,
   },
+  {
+    title: "Seguro de Bike",
+    description:
+      "Seguro de Bike é um contrato que garante o pagamento de uma indenização.",
+    image: "images/insurance-bike.png",
+    link: `${domain}/servico.html?seguro-de-bike`,
+  }
+  // {
+  //   title: "Seguro Viagem",
+  //   description:
+  //     "Seguro de Viagem é um contrato que garante o pagamento de uma indenização.",
+  //   image: "images/insurance-travel.png",
+  //   link: `${domain}/servico.html?seguro-de-viagem`,
+  // },
+  // {
+  //   title: "Consórcio",
+  //   description:
+  //     "Consórcio é um contrato que garante o pagamento de uma indenização.",
+  //   image: "images/insurance-consortium.png",
+  //   link: `${domain}/servico.html?consorcio`,
+  // },
+  // {
+  //   title: "Financiamento",
+  //   description:
+  //     "Financiamento é um contrato que garante o pagamento de uma indenização.",
+  //   image: "images/insurance-financing.png",
+  //   link: `${domain}/servico.html?financiamento`,
+  // },
 ];
 
 export const insurancesItemsEnterprise = [
