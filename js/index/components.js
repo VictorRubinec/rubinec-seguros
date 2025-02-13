@@ -4,144 +4,127 @@ export const insurancesItemsPersonal = [
   {
     title: "Seguro de Automóvel",
     description:
-      "Seguro de Carro é um contrato que garante o pagamento de uma indenização.",
+      "Tenha o poder de enfrentar qualquer imprevisto no trânsito sem maiores preocupações.",
     image: "images/service-car.png",
     link: `${domain}/servico.html?seguro-de-carro`,
   },
   {
     title: "Seguro de Moto",
     description:
-      "Seguro de Moto é um contrato que garante o pagamento de uma indenização.",
+      "Mais segurança para suas aventuras. O seguro que combina com seu estilo, com cobertura completa e assistência 24h.",
     image: "images/insurance-motorcycle.png",
     link: `${domain}/servico.html?seguro-de-moto`,
   },
   {
-    title: "Seguro Residencial",
+    title: "Seguro de Bike",
     description:
-      "Seguro Residencial é um contrato que garante o pagamento de uma indenização.",
-    image: "images/insurance-home.png",
-    link: `${domain}/servico.html?seguro-residencial`,
-  },
-  {
-    title: "Previdência Complementar",
-    description:
-      "Previdência Complementar é um contrato que garante o pagamento de uma indenização.",
-    image: "images/insurance-pension.png",
-    link: `${domain}/servico.html?previdencia-complementar`,
+      "Uma solução completa que oferece proteção e serviços para você se aventurar sem medo.",
+    image: "images/insurance-bike.png",
+    link: `${domain}/servico.html?seguro-de-bike`,
   },
   {
     title: "Seguro de Vida",
     description:
-      "Seguro de Vida é um contrato que garante o pagamento de uma indenização.",
+      "Privilégio é poder desfrutar da vida junto aos que amamos e poder garantir uma proteção digna da nossa família.",
     image: "images/insurance-life.png",
     link: `${domain}/servico.html?seguro-de-vida`,
   },
   {
     title: "Seguro Saúde",
     description:
-      "Seguro Saúde é um contrato que garante o pagamento de uma indenização.",
+      "Tranquilidade e todo o suporte para auxiliar seu bem-estar e saúde.",
     image: "images/insurance-health.png",
     link: `${domain}/servico.html?seguro-saude`,
   },
   {
+    title: "Previdência Privada",
+    description:
+      "Planejamento financeiro é item obrigatório para uma vida tranquila. Aposentar-se bem é aposentar com segurança.",
+    image: "images/insurance-pension.png",
+    link: `${domain}/servico.html?previdencia-privada`,
+  },
+  {
+    title: "Seguro Residencial",
+    description: "Proteja ser futuro e de sua família com um lar seguro.",
+    image: "images/insurance-home.png",
+    link: `${domain}/servico.html?seguro-residencial`,
+  },
+  {
+    title: "Consórcio",
+    description:
+      "Transforme seus planos em grandes conquistas com um consórcio.",
+    image: "images/insurance-consortium.png",
+    link: `${domain}/servico.html?consorcio`,
+  },
+  {
     title: "Responsabilidade Civil",
     description:
-      "Responsabilidade Civil é um contrato que garante o pagamento de uma indenização.",
+      "Para exercer com tranquilidade e excelência a sua profissão, estar seguro em sua atuação é essencial.",
     image: "images/insurance-civil-responsibility.png",
     link: `${domain}/servico.html?responsabilidade-civil`,
   },
-  {
-    title: "Seguro de Bike",
-    description:
-      "Seguro de Bike é um contrato que garante o pagamento de uma indenização.",
-    image: "images/insurance-bike.png",
-    link: `${domain}/servico.html?seguro-de-bike`,
-  }
-  // {
-  //   title: "Seguro Viagem",
-  //   description:
-  //     "Seguro de Viagem é um contrato que garante o pagamento de uma indenização.",
-  //   image: "images/insurance-travel.png",
-  //   link: `${domain}/servico.html?seguro-de-viagem`,
-  // },
-  // {
-  //   title: "Consórcio",
-  //   description:
-  //     "Consórcio é um contrato que garante o pagamento de uma indenização.",
-  //   image: "images/insurance-consortium.png",
-  //   link: `${domain}/servico.html?consorcio`,
-  // },
-  // {
-  //   title: "Financiamento",
-  //   description:
-  //     "Financiamento é um contrato que garante o pagamento de uma indenização.",
-  //   image: "images/insurance-financing.png",
-  //   link: `${domain}/servico.html?financiamento`,
-  // },
 ];
 
 export const insurancesItemsEnterprise = [
   {
-    title: "Seguro de Frota",
+    title: "Seguro Condomínio",
     description:
-      "Seguro de Frota é um contrato que garante o pagamento de uma indenização.",
-    image: "images/insurance-fleet.png",
-    link: `${domain}/servico.html?seguro-de-frota`,
+      "A proteção completa para o patrimônio que obriga famílias e vidas.",
+    image: "images/insurance-condominium.png",
+    link: `${domain}/servico.html?seguro-de-condominio`,
   },
   {
-    title: "Seguro de Equipamentos",
+    title: "Seguro Empresarial",
     description:
-      "Seguro de Equipamentos é um contrato que garante o pagamento de uma indenização.",
-    image: "images/insurance-equipment.png",
-    link: `${domain}/servico.html?seguro-de-equipamentos`,
+      "Empresa de sucesso é empresa segura, proteja seu investimento profissional.",
+    image: "images/insurance-business.png",
+    link: `${domain}/servico.html?seguro-empresarial`,
   },
   {
-    title: "Seguro de Vida em Grupo",
+    title: "Previdência Empresarial",
     description:
-      "Seguro de Vida em Grupo é um contrato que garante o pagamento de uma indenização.",
-    image: "images/insurance-group-life.png",
-    link: `${domain}/servico.html?seguro-de-vida-em-grupo`,
+      "Uma solução na medida para o futuro da sua empresa e dos seus colaboradores.",
+    image: "images/insurance-business-pension.png",
+    link: `${domain}/servico.html?previdencia-empresarial`,
   },
   {
-    title: "Seguro de Saúde",
+    title: "Responsabilidade Civil",
     description:
-      "Seguro de Saúde é um contrato que garante o pagamento de uma indenização.",
-    image: "images/insurance-health.png",
-    link: `${domain}/servico.html?seguro-de-saude`,
-  },
-  {
-    title: "Seguro de Responsabilidade Civil",
-    description:
-      "Seguro de Responsabilidade Civil é um contrato que garante o pagamento de uma indenização.",
+      "Para exercer com tranquilidade e excelência a sua profissão, estar seguro em sua atuação é essencial.",
     image: "images/insurance-civil-responsibility.png",
-    link: `${domain}/servico.html?seguro-de-responsabilidade-civil`,
+    link: `${domain}/servico.html?responsabilidade-civil-empresarial`,
   },
   {
-    title: "Seguro de Crédito",
+    title: "Seguro de Vida Empresarial",
     description:
-      "Seguro de Crédito é um contrato que garante o pagamento de uma indenização.",
-    image: "images/insurance-credit.png",
-    link: `${domain}/servico.html?seguro-de-credito`,
+      "Garanta mais cuidado para sua família, segurança financeira para você e para quem mais importa.",
+    image: "images/insurance-business-life.png",
+    link: `${domain}/servico.html?seguro-de-vida-empresarial`,
   },
   {
-    title: "Seguro de Garantia",
+    title: "Seguro Auto Frota",
     description:
-      "Seguro de Garantia é um contrato que garante o pagamento de uma indenização.",
-    image: "images/insurance-guarantee.png",
-    link: `${domain}/servico.html?seguro-de-garantia`,
+      "A proteção que acompanha você em qualquer lugar em qualquer situação para veículos de uso comercial.",
+    image: "images/insurance-fleet.png",
+    link: `${domain}/servico.html?seguro-auto-frota`,
   },
   {
-    title: "Seguro de Transporte",
+    title: "Máquinas e Equipamentos",
     description:
-      "Seguro de Transporte é um contrato que garante o pagamento de uma indenização.",
-    image: "images/insurance-transport.png",
-    link: `${domain}/servico.html?seguro-de-transporte`,
+      "Proteja os mais diversos tipos de equipamentos seja qual for, agronegócio, indústria ou serviços.",
+    image: "images/insurance-equipment.png",
+    link: `${domain}/servico.html?maquinas-e-equipamentos`,
   },
   {
-    title: "Seguro de Riscos de Engenharia",
-    description:
-      "Seguro de Riscos de Engenharia é um contrato que garante o pagamento de uma indenização.",
-    image: "images/insurance-engineering-risks.png",
-    link: `${domain}/servico.html?seguro-de-riscos-de-engenharia`,
+    title: "Plano de Saúde Empresarial",
+    description: "A Saúde de seus funcionários cada vez mais segura.",
+    image: "images/insurance-health.png",
+    link: `${domain}/servico.html?plano-de-saude-empresarial`,
+  },
+  {
+    title: "Plano Odontológico",
+    description: "A Saúde Bucal de seus funcionários cada vez mais segura.",
+    image: "images/insurance-dental.png",
+    link: `${domain}/servico.html?plano-odontologico`,
   },
 ];
