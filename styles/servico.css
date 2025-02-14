@@ -27,8 +27,8 @@
 .insurance-text {
     font-size: 16px;
     line-height: 1.6;
-    color: #555;
-    text-indent: 10px;
+    color: #333;
+    text-indent: 3px;
 }
 
 .insurance-title-bold {
@@ -40,7 +40,7 @@
 
 .insurance-list {
     padding-left: 0;
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .insurance-list-item {

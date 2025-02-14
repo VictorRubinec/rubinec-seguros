@@ -37,11 +37,11 @@ export const insurancesItemsPersonal = [
     link: `${domain}/servico.html?seguro-saude`,
   },
   {
-    title: "Previdência Privada",
+    title: "Previdência",
     description:
       "Planejamento financeiro é item obrigatório para uma vida tranquila. Aposentar-se bem é aposentar com segurança.",
     image: "images/insurance-pension.png",
-    link: `${domain}/servico.html?previdencia-privada`,
+    link: `${domain}/servico.html?previdencia`,
   },
   {
     title: "Seguro Residencial",

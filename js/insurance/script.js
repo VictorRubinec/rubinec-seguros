@@ -52,7 +52,7 @@ function createComponentElement(type, content) {
       break;
 
     case "topic_simple":
-      const topicText = createElement("p", "insurance-title", content.title);
+      const topicText = createElement("p", "insurance-text", content.title);
       container.appendChild(topicText);
       const ulSimple = createElement("ul", "insurance-list");
       content.itens.forEach((item) => {

@@ -161,8 +161,8 @@ export const InsuranceComponents = [
     ],
   },
   {
-    id: "previdencia-privada",
-    title: "Previdência Privada",
+    id: "previdencia",
+    title: "Previdência",
     types: [
       "text_simple",
       "header",
