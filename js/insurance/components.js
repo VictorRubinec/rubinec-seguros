@@ -15,7 +15,7 @@
 // header = titulo principal
 // string normal
 
-export const InsurenceComponentsPersonal = [
+export const InsuranceComponents = [
   {
     id: "seguro-de-automovel",
     title: "Seguro de Automóvel",
@@ -345,9 +345,6 @@ export const InsurenceComponentsPersonal = [
       },
     ],
   },
-];
-
-export const InsurenceComponentsEnterprise = [
   {
     id: "seguro-de-condominio",
     title: "Seguro de Condomínio",
@@ -538,72 +535,72 @@ export const InsurenceComponentsEnterprise = [
       "Coberturas que protegem você e seus veículos",
       {
         title: "Danos a terceiros",
-        text: [
+        itens: [
           "Garante a cobertura de gastos em reparo de danos a bens materiais patrimoniais e danos corporais causados a terceiros em acidentes.",
         ],
       },
       {
         title: "Assistência 24h compacta",
-        text: [
+        itens: [
           "Assistência para passageiros e veículos com: guincho 100 km para pane e 2000 km para sinistro, chaveiro, passagens ao destino ou retorno, reaver veículo, hospedagem e outros.",
         ],
       },
       {
         title: "Carroceria e equipamentos",
-        text: [
+        itens: [
           "Cobertura para itens acoplados ao veículo. Exemplo: plataforma, munk, caçamba, entre outros.",
         ],
       },
       {
         title: "Acessório",
-        text: ["Cobertura para som e imagem."],
+        itens: ["Cobertura para som e imagem."],
       },
       {
         title: "Reposição de 0km por até 6 meses",
-        text: [
+        itens: [
           "Garante a reposição do bem, sem nenhum custo para o cliente durante o prazo de 6 meses, desde que estejam nas condições preestabelecidas no contrato.",
         ],
       },
       {
         title: "Danos Morais e Estéticos",
-        text: [
+        itens: [
           "Reembolsa a indenização paga a terceiros — em decorrência de danos morais — envolvidos em acidente de trânsito com o veículo segurado, coberto e indenizável devido a um acionamento judicial. Há, também, as opções de 2º risco, ou seja, quando há necessidade de contratar valores excedentes à contratação da mesma cobertura em uma congênere.",
         ],
       },
       {
         title: "Danos Materiais e Corporais a terceiros – Desatrelado",
-        text: [
+        itens: [
           "Cobre eventuais danos corporais e/ou patrimoniais de terceiros. Oferece ainda, as opções de 2º risco, quando há necessidade de contratar valores excedentes a contratação da mesma cobertura em uma congênere. Entende-se como desatrelado, a parte do veículo (reboque ou semirreboque) quando desprendida do cavalo mecânico/rebocador.",
         ],
       },
       {
         title: "Danos Materiais e Corporais a terceiros – Garantia única",
-        text: [
+        itens: [
           "Cobre eventuais danos corporais e/ou patrimoniais de terceiros na mesma garantia, dando liberdade ao segurado de utilizá-la no evento de sinistro conforme maior necessidade. Entende-se por 2º risco o critério de contratação de valor complementar desta cobertura, em uma congênere.",
         ],
       },
       "Quais são as cláusulas que podem ser contratadas para sua frota de veículos",
       {
         title: "Vidros:",
-        text: [
+        itens: [
           "Cobre a troca ou reparo dos vidros, em caso de quebra ou trincamento de acordo com as condições que foram contratadas no seguro.",
         ],
       },
       {
         title: "Despesas extraordinárias:",
-        text: [
+        itens: [
           "Contratação de importância extra limitada aos critérios da seguradora, que será reembolsada ao segurado em momento de sinistro exclusivo de indenização integral.",
         ],
       },
       {
         title: "Extensão de perímetro:",
-        text: [
+        itens: [
           "Garante atendimento, exclusivo para o veículo segurado, em caso de sinistro, na Argentina, Paraguai, Uruguai, Chile e Bolívia.",
         ],
       },
       {
         title: "Extensão de cobertura para veículos de rebocados:",
-        text: [
+        itens: [
           "Cobre danos materiais ocasionados ao veículo rebocado de terceiros (automotor de via terrestre) em poder do segurado. Cobre danos materiais e/ou corporais a terceiros pelo veículo rebocado durante uma operação de reboque.",
         ],
       },

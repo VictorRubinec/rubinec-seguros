@@ -1,7 +1,7 @@
 import {
     insurancesItemsPersonal,
     insurancesItemsEnterprise,
-  } from "./index/components.js";
+  } from "../js/index/components.js";
 
 const insurancesNavbarPersonal = document.getElementById("dropdown-section-personal");
 const insurancesNavbarEnterprise = document.getElementById("dropdown-section-enterprise");

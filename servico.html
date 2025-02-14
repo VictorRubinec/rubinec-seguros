@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="global/style.css" />
     <link rel="stylesheet" href="styles/servico.css" />
     <title>Seguro Online</title>
     <link
@@ -13,12 +14,7 @@
   <body>
     <header id="header">
       <a href="index.html">
-        <img
-          src="images/Rlogo.png"
-          alt="Logo do site"
-          class="logo"
-          loading="lazy"
-        />
+        <img src="images/logo.png" alt="Logo do site" class="logo"/>
       </a>
       <nav id="navbar">
         <ul>
@@ -54,6 +50,10 @@
       </nav>
     </header>
 
+    <section id="content">
+      <div id="insurances-container"></div>
+    </section>
+
     <footer id="footer" class="footer">
       <div class="footer-container">
         <div class="footer-info">
@@ -75,6 +75,6 @@
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="js/insurance/script.js" type="module"></script>
-    <script src="js/script.js" type="module"></script>
+    <script src="global/script.js" type="module"></script>
   </body>
 </html>

@@ -6,7 +6,7 @@ export const insurancesItemsPersonal = [
     description:
       "Tenha o poder de enfrentar qualquer imprevisto no trânsito sem maiores preocupações.",
     image: "images/service-car.png",
-    link: `${domain}/servico.html?seguro-de-carro`,
+    link: `${domain}/servico.html?seguro-de-automovel`,
   },
   {
     title: "Seguro de Moto",
