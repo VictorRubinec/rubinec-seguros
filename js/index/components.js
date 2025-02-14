@@ -57,17 +57,17 @@ export const insurancesItemsPersonal = [
     link: `${domain}/servico.html?consorcio`,
   },
   {
-    title: "Responsabilidade Civil",
+    title: "Equipamentos Portáteis",
     description:
-      "Para exercer com tranquilidade e excelência a sua profissão, estar seguro em sua atuação é essencial.",
-    image: "images/insurance-civil-responsibility.png",
-    link: `${domain}/servico.html?responsabilidade-civil`,
+      "",
+    image: "images/insurance-portable-equipment.png",
+    link: `${domain}/servico.html?equipamentos-portateis`,
   },
 ];
 
 export const insurancesItemsEnterprise = [
   {
-    title: "Seguro Condomínio",
+    title: "Seguro de Condomínio",
     description:
       "A proteção completa para o patrimônio que obriga famílias e vidas.",
     image: "images/insurance-condominium.png",
@@ -92,7 +92,7 @@ export const insurancesItemsEnterprise = [
     description:
       "Para exercer com tranquilidade e excelência a sua profissão, estar seguro em sua atuação é essencial.",
     image: "images/insurance-civil-responsibility.png",
-    link: `${domain}/servico.html?responsabilidade-civil-empresarial`,
+    link: `${domain}/servico.html?responsabilidade-civil`,
   },
   {
     title: "Seguro de Vida Empresarial",

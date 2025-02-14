@@ -165,7 +165,7 @@ body {
 
 .insurances-container {
   width: 100%;
-  max-width: calc(var(--insurance-width) * 4 + var(--insurance-gap) * 3);
+  max-width: calc(var(--insurance-width) * 3 + var(--insurance-gap) * 2);
   display: flex;
   flex-wrap: wrap;
   gap: var(--insurance-gap);
