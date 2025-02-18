@@ -42,6 +42,72 @@ export const InsuranceComponents = [
         ],
       },
     ],
+    form: {
+      // CEP
+      image: "images/insurance-car.png",
+      fields: [
+        {
+          name: "carType",
+          type: "select",
+          label: "Tipo de veículo",
+          options: ["Carro", "Caminhão", "Van"],
+          required: true,
+        },
+        {
+          name: "carPlate",
+          type: "text",
+          label: "Placa do veículo",
+          placeholder: "Digite a placa",
+          required: true,
+          validation: "^[A-Z]{3}-\\d{4}$",
+        },
+        {
+          name: "carYear",
+          type: "number",
+          label: "Ano do veículo",
+          placeholder: "Digite o ano",
+          required: true,
+          validation: "^\\d{4}$",
+        },
+        {
+          name: "carModel",
+          type: "text",
+          label: "Modelo do veículo",
+          placeholder: "Digite o modelo",
+          required: true,
+        },
+        {
+          name: "name",
+          type: "text",
+          label: "Seu nome",
+          placeholder: "Digite seu nome",
+          required: true,
+        },
+        {
+          name: "email",
+          type: "email",
+          label: "Seu e-mail",
+          placeholder: "email@email.com",
+          required: true,
+          validation: "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
+        },
+        {
+          name: "phone",
+          type: "tel",
+          label: "Seu telefone",
+          placeholder: "(DDD) 99999-9999",
+          required: true,
+          validation: "^\\(\\d{2}\\) \\d{5}-\\d{4}$",
+        },
+        {
+          name: "message",
+          type: "textarea",
+          label: "Observações",
+          placeholder: "Digite suas observações",
+          required: false,
+        },
+      ],
+    },
   },
   {
     id: "seguro-de-moto",
@@ -73,6 +139,7 @@ export const InsuranceComponents = [
         ],
       },
     ],
+    // msm coisa que o de carro, mas sem o tipo de veiculo
   },
   {
     id: "seguro-de-bike",
@@ -104,6 +171,7 @@ export const InsuranceComponents = [
         ],
       },
     ],
+    // valor da bike, nome, email, telefone, cep, observações
   },
   {
     id: "seguro-de-vida",
@@ -133,6 +201,7 @@ export const InsuranceComponents = [
         ],
       },
     ],
+    // nome, email, telefone, cep, observações
   },
   {
     id: "seguro-saude",
@@ -159,6 +228,7 @@ export const InsuranceComponents = [
         "O valor do seguro saúde pode variar de acordo com a seguradora e as coberturas contratadas.",
       ],
     ],
+    // quantidade de pessoas (se minimo), estado (todos), nome, email, telefone, cep, observações
   },
   {
     id: "previdencia",
@@ -220,6 +290,7 @@ export const InsuranceComponents = [
         "O plano pode ser contratado de várias formas, dependendo da situação da criança.",
       ],
     ],
+    // nome, email, telefone, cep, observações
   },
   {
     id: "seguro-residencial",
@@ -293,6 +364,7 @@ export const InsuranceComponents = [
         text: ["De urbana a elétrica, sua nova bike é garantida sem juros."],
       },
     ],
+    // nome, email, telefone, cep, observações
   },
   {
     id: "equipamentos-portateis",
@@ -344,6 +416,7 @@ export const InsuranceComponents = [
         ],
       },
     ],
+    // valor do equipamento (500), equipamento, nome, email, telefone, cep, observações
   },
   {
     id: "seguro-de-condominio",
@@ -385,6 +458,7 @@ export const InsuranceComponents = [
         ],
       },
     ],
+    // nome, email, telefone, cep, observações
   },
   {
     id: "seguro-empresarial",
@@ -413,6 +487,7 @@ export const InsuranceComponents = [
         ],
       },
     ],
+    // padrão
   },
   {
     id: "seguro-de-vida-empresarial",
@@ -443,6 +518,7 @@ export const InsuranceComponents = [
         ],
       },
     ],
+    // padrão
   },
   {
     id: "previdencia-empresarial",
@@ -473,6 +549,7 @@ export const InsuranceComponents = [
         ],
       },
     ],
+    // padrão
   },
   {
     id: "responsabilidade-civil",
@@ -504,6 +581,7 @@ export const InsuranceComponents = [
         ],
       },
     ],
+    // padrão
   },
   {
     id: "seguro-auto-frota",
@@ -605,6 +683,7 @@ export const InsuranceComponents = [
         ],
       },
     ],
+    // padrão
   },
   {
     id: "maquinas-e-equipamentos",
@@ -628,6 +707,7 @@ export const InsuranceComponents = [
         ],
       },
     ],
+    // padrão
   },
   {
     id: "plano-de-saude-empresarial",
@@ -696,6 +776,7 @@ export const InsuranceComponents = [
         "Em alguns planos, existe também a possibilidade de desconto na compra de medicamentos, com desconto em folha ou na hora do pagamento.",
       ],
     ],
+    // quantidade de pessoas (3), estado (todos), empresa, nome, email, telefone, cep, observações
   },
   {
     id: "plano-odontologico",
@@ -725,5 +806,6 @@ export const InsuranceComponents = [
         ],
       },
     ],
+    // quantidade de pessoas (3), estado (todos), empresa, nome, email, telefone, cep, observações
   },
 ];
