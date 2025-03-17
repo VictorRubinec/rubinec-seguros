@@ -1,0 +1,386 @@
+#banner {
+  background-size: auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  border-bottom: 3px solid var(--red);
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 100%;
+}
+
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 300px;
+  width: 950px;
+}
+
+.banner-container p {
+  font-size: 1.2rem;
+  color: var(--light-gray);
+  text-transform: uppercase;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.banner-container h1 {
+  font-size: 2.5rem;
+  color: var(--white);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  margin: 0;
+}
+
+#service-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 0;
+  background-color: var(--light-black);
+}
+
+.service-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 850px;
+}
+
+.service-container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+
+.service-container ul {
+  list-style: none;
+  background-color: var(--dark-gray-3);
+  padding: 1rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+}
+
+.service-container ul li {
+  color: var(--light-gray);
+}
+
+.img-rectangle, .img-rectangle-2, .img-square {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 1rem;
+  border-radius: 16px;
+}
+
+.img-rectangle {
+  width: 410px;
+  height: 200px;
+}
+
+.img-rectangle-2 {
+  width: 410px;
+  height: 450px;
+}
+
+.img-square {
+  width: 410px;
+  height: 410px;
+}
+
+/* contact button */
+.contact-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.btn-contact {
+  background-color: var(--red);
+  color: var(--white);
+  padding: 0.8rem 1.5rem;
+  border-radius: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-contact:hover {
+  transition: 0.3s;
+  background-color: var(--dark-red);
+}
+
+.btn-contact img {
+  height: 25px;
+  margin-left: 0.8rem;
+}
+
+/* text simple */
+
+.text-simple p{
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: var(--light-gray);
+}
+
+/* text bold */
+.text-bold h2 {
+  font-size: 1.8rem;
+  margin: 0rem 0rem 1.5rem 1rem;
+}
+
+.text-bold p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  color: var(--light-gray);
+  background-color: var(--dark-gray-3);
+  padding: 1rem;
+  border-radius: 16px;
+}
+
+/* topic bold */
+.topic-bold h2 {
+  font-size: 1.8rem;
+  margin: 0rem 0rem 1.5rem 1rem;
+}
+
+.topic-bold ul {
+  list-style: none;
+  background-color: var(--dark-gray-3);
+  padding: 1rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+}
+
+.topic-bold ul li {
+  color: var(--light-gray);
+}
+
+/* topic simple */
+.topic-simple h2 {
+  font-size: 1.8rem;
+  margin: 0rem 0rem 1.5rem 1rem;
+}
+
+.topic-simple p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--light-gray);
+}
+
+.topic-bold ul {
+  list-style: none;
+  background-color: var(--dark-gray-3);
+  padding: 1rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+}
+
+.topic-bold ul li {
+  color: var(--light-gray);
+}
+
+/* title */
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.title h1 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cols {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+  background-color: var(--gray);
+  color: var(--black);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  padding: 1.5rem;
+  background-color: var(--white);
+}
+
+.form-container h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.form-container p {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.form-container .form-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.form-container .form-row label{
+  width: 100%;
+}
+
+.form-container .form-row-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.form-container .form-row-2 label{
+  width: 48%;
+}
+
+.form-container .form-row-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.form-container .form-row-3 label{
+  width: 30%;
+}
+
+.form-container label {
+  position: relative;
+  width: 90%;
+  margin-bottom: 1rem;
+  font-size: large;
+}
+
+.form-container span {
+  font-family: "Poppins", sans-serif;
+}
+
+.form-container label input,
+.form-container label textarea,
+.form-container label select {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  font-size: 1.2rem;
+  border: none;
+  border-bottom: 2px solid var(--dark-gray-3);
+}
+
+.form-container label input + span,
+.form-container label textarea + span,
+.form-container label select + span {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form-container label input:focus + span,
+.form-container label textarea:focus + span,
+.form-container label select:focus + span,
+.form-container label input:not(:placeholder-shown) + span,
+.form-container label textarea:not(:placeholder-shown) + span,
+.form-container label select:not(:placeholder-shown) + span {
+  top: -10px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form-container label select:valid + span,
+.form-container label select:focus + span {
+  top: -10px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form-container label textarea {
+  height: 100px;
+}
+
+.form-container label select {
+  border-radius: 0.1px;
+}
+
+.form-container button {
+  background-color: var(--red);
+  color: var(--white);
+  width: 60%;
+  padding: 0.8rem 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  border: none;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: var(--dark-red);
+}
+
+.form-container button img {
+  height: 25px;
+  margin-left: 1.2rem;
+}
+
+.form-container .error-label {
+  color: red;
+}
+
+.form-container .error {
+  background-color: var(--light-red);
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--dark-red)
+}

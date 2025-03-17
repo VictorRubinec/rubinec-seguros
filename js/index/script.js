@@ -1,83 +1,107 @@
 import {
-  insurancesItemsPersonal,
-  insurancesItemsEnterprise,
+  servicesCardsForYou,
+  servicesCardsForEnterprise,
 } from "./components.js";
 
-const insurancesPersonal = document.getElementById("insurances-personal");
-const insurancesEnterprise = document.getElementById("insurances-enterprise");
+function ChangeServices(active) {
+  const forYou = document.getElementById("services-for-you");
+  const forBusiness = document.getElementById("services-for-business");
 
-function plotInsurances(insurances, container) {
-  if (!container) {
-    console.error("Container: " + container + " not found");
+  if (!forYou || !forBusiness || !btnForYou || !btnForBusiness) {
+    console.error("Um ou mais elementos não encontrados.");
     return;
   }
-  insurances.forEach((insurance) => {
-    const insuranceElement = document.createElement("div");
-    insuranceElement.classList.add("insurance");
 
-    const insuranceText = document.createElement("div");
-    insuranceText.classList.add("insurance-text");
+  switch (active) {
+    case "1":
+      forYou.style.display = "block";
+      forBusiness.style.display = "none";
 
-    const insuranceContent = document.createElement("div");
-    insuranceContent.classList.add("insurance-content");
+      btnForYou.classList.add("active");
+      btnForBusiness.classList.remove("active");
+      break;
+    case "2":
+      forYou.style.display = "none";
+      forBusiness.style.display = "block";
 
-    const insuranceTitle = document.createElement("h2");
-    insuranceTitle.textContent = insurance.title;
+      btnForYou.classList.remove("active");
+      btnForBusiness.classList.add("active");
+      break;
+    default:
+      break;
+  }
+}
 
-    const insuranceDescription = document.createElement("p");
-    insuranceDescription.textContent = insurance.description;
+function loadServices(cards, container) {
+  if (!container) {
+    console.error("Container não encontrado.");
+    return;
+  }
 
-    insuranceContent.append(insuranceTitle, insuranceDescription);
+  const servicesContainer = container.querySelector(".services-container");
+  if (!servicesContainer) {
+    console.error("services-container não encontrado.");
+    return;
+  }
 
-    const insuranceButton = document.createElement("button");
-    insuranceButton.textContent = "Saiba Mais";
-    insuranceButton.addEventListener("click", () => {
-      window.location.href = insurance.link;
-    });
+  cards.forEach((card) => {
+    const serviceCard = document.createElement("div");
+    serviceCard.classList.add("services-card");
 
-    insuranceText.append(insuranceContent, insuranceButton);
+    const serviceImage = document.createElement("img");
+    serviceImage.src = card.image;
+    serviceImage.alt = card.title;
 
-    const insuranceImageContainer = document.createElement("div");
-    insuranceImageContainer.classList.add("insurance-image-container");
+    const serviceCardText = document.createElement("div");
+    serviceCardText.classList.add("services-card-text");
 
-    const insuranceImage = document.createElement("img");
-    insuranceImage.src = insurance.image;
-    insuranceImage.alt = insurance.title;
-    insuranceImage.loading = "lazy";
-    insuranceImage.classList.add("insurance-image");
+    const serviceTitle = document.createElement("h2");
+    serviceTitle.textContent = card.title;
 
-    insuranceImageContainer.appendChild(insuranceImage);
-    insuranceElement.append(insuranceText, insuranceImageContainer);
+    const serviceButton = document.createElement("a");
+    serviceButton.classList.add("service-button");
+    serviceButton.textContent = "Saiba mais";
+    serviceButton.href = card.link;
 
-    container.appendChild(insuranceElement);
+    serviceCardText.append(serviceTitle, serviceButton);
+    serviceCard.append(serviceImage, serviceCardText);
+
+    servicesContainer.appendChild(serviceCard);
   });
 }
 
-function addSmoothScrollToNavbar() {
-  const navLinks = document.querySelectorAll(".nav-item");
+const btnForYou = document.getElementById("btn-for-you");
+const btnForBusiness = document.getElementById("btn-for-business");
 
-  navLinks.forEach((link) => {
-    link.addEventListener("click", (event) => {
-      event.preventDefault();
-      const targetId = link.getAttribute("href");
-      const targetElement = document.querySelector(targetId);
-
-      if (targetElement) {
-        const navbarHeight = document.querySelector("#header").offsetHeight;
-
-        window.scrollTo({
-          top: targetElement.offsetTop - navbarHeight,
-          behavior: "smooth",
-        });
-      }
-    });
-  });
+if (!btnForYou || !btnForBusiness) {
+  console.error("Um ou mais botões não encontrados.");
 }
+
+btnForYou.addEventListener("click", () => ChangeServices("1"));
+btnForBusiness.addEventListener("click", () => ChangeServices("2"));
+
+const btnScrollServices = document.getElementById("scrollButton");
+
+btnScrollServices.addEventListener("click", () => {
+  const section = document.querySelector(".services-section");
+  window.scrollTo({
+    top: section.offsetTop - 120,
+    behavior: "smooth",
+  });
+});
 
 document.addEventListener("DOMContentLoaded", () => {
-  plotInsurances(insurancesItemsPersonal, insurancesPersonal);
-  plotInsurances(insurancesItemsEnterprise, insurancesEnterprise);
+  const containerForYou = document.getElementById("services-for-you");
+  const containerForBusiness = document.getElementById("services-for-business");
 
-  addSmoothScrollToNavbar();
-  initializeMap();
+  if (!containerForYou) {
+    console.error("containerForYou não encontrado.");
+  }
+  if (!containerForBusiness) {
+    console.error("containerForBusiness não encontrado.");
+  }
+
+  ChangeServices("1");
+  loadServices(servicesCardsForYou, containerForYou);
+  loadServices(servicesCardsForEnterprise, containerForBusiness);
 });

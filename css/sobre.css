@@ -1,0 +1,148 @@
+#banner {
+  background-image: url(../images/banners/sobre.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: 3px solid var(--red);
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  width: 850px;
+}
+
+.banner-container p {
+  font-size: 1rem;
+  color: var(--red);
+  text-transform: uppercase;
+}
+
+.banner-container h1 {
+  font-size: 2.5rem;
+  color: var(--red);
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 0.8rem 0;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 8rem;
+  width: 100%;
+}
+
+.about-logo {
+  height: 40px;
+  margin-bottom: 4rem;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 850px;
+  height: 100%;
+}
+
+.about-text h1 {
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about-text p {
+  font-size: 0.9rem;
+  color: var(--light-gray);
+  margin-bottom: 1rem;
+}
+
+.about-text-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 0;
+}
+
+.about-text-container img {
+  width: 350px;
+  height: 200px;
+  border-radius: 16px;
+}
+
+.about-text-content {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.about-text-content h1 {
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-bottom: 1rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.about-text-content p {
+  font-size: 0.9rem;
+  color: var(--light-gray);
+  margin-bottom: 1rem;
+}
+
+#mission {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 8rem;
+  width: 100%;
+  background-color: var(--red);
+}
+
+.mission-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 850px;
+  height: 100%;
+}
+
+.mission-title {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.mission-title h1 {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: -0.6rem;
+  margin-right: -1rem;
+}
+
+.mission-title img {
+  height: 60px;
+}
+
+.mission-text p {
+  font-size: 0.9rem;
+  color: var(--white);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}

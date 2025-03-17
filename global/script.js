@@ -1,71 +1,61 @@
 import {
-    insurancesItemsPersonal,
-    insurancesItemsEnterprise,
-  } from "../js/index/components.js";
+  servicesCardsForYou,
+  servicesCardsForEnterprise,
+} from "../js/index/components.js";
 
-const insurancesNavbarPersonal = document.getElementById("dropdown-section-personal");
-const insurancesNavbarEnterprise = document.getElementById("dropdown-section-enterprise");
+const navBarServices = document.getElementById("dropdown-section-services");
 
-function plotNavbarInsurances(insurances, container) {
-  if (!container) {
-    console.error("Container: " + container + " not found");
-    return;
-  }
-  insurances.forEach((insurance) => {
-    const navItem = document.createElement("a");
-    navItem.href = insurance.link;
-    navItem.textContent = insurance.title;
+function addServicesToNavbar() {
+  // Seleciona as seções da navbar
+  const leftSection = navBarServices.querySelector(".left-section");
+  const rightSection = navBarServices.querySelector(".right-section");
 
-    container.appendChild(navItem);
+  // Limpa as seções antes de adicionar novos itens
+  leftSection.innerHTML = "<h1>Para você</h1>"; // Resetando o título
+  rightSection.innerHTML = "<h1>Para sua empresa</h1>"; // Resetando o título
+
+  // Adiciona os itens da lista de serviços "Para você" à seção esquerda
+  servicesCardsForYou.forEach(service => {
+    const aTag = document.createElement("a");
+    aTag.href = service.link;
+    aTag.textContent = service.title;
+    leftSection.appendChild(aTag);
+  });
+
+  // Adiciona os itens da lista de serviços "Para sua empresa" à seção direita
+  servicesCardsForEnterprise.forEach(service => {
+    const aTag = document.createElement("a");
+    aTag.href = service.link;
+    aTag.textContent = service.title;
+    rightSection.appendChild(aTag);
   });
 }
 
-function initializeMap() {
-  var apiKey = "3976c5dc0d4d4bfa885a9685b18149f8";
+function addSmoothScrollToNavbar() {
+  const navLinks = document.querySelectorAll(".nav-item");
 
-  const address = "Rua Silva Melo, 54, Santo André, SP, Brasil";
-  const nickname = "MASP";
+  navLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const targetId = link.getAttribute("href");
 
-  fetch(
-    `https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(
-      address
-    )}&key=${apiKey}`
-  )
-    .then((response) => response.json())
-    .then((data) => {
-      if (data.results.length > 0) {
-        const latitude = data.results[0].geometry.lat;
-        const longitude = data.results[0].geometry.lng;
+      if (targetId.startsWith("#")) {
+        event.preventDefault();
+        const targetElement = document.querySelector(targetId);
 
-        const map = L.map("map").setView([latitude, longitude], 15);
+        if (targetElement) {
+          const navbarHeight = document.querySelector("#header").offsetHeight;
 
-        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-          attribution:
-            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-        }).addTo(map);
-
-        const marker = L.marker([latitude, longitude]).addTo(map);
-        marker.bindPopup(`<b>${nickname}</b><br>${address}`).openPopup();
-
-        marker.on("click", function () {
-          window.open(
-            `https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}`,
-            "_blank"
-          );
-        });
+          window.scrollTo({
+            top: targetElement.offsetTop - navbarHeight,
+            behavior: "smooth",
+          });
+        }
       } else {
-        alert("Address not found.");
+        window.location.href = targetId;
       }
-    })
-    .catch((error) => {
-      console.error("Geocoding error:", error);
-      alert("Unable to locate the address.");
     });
+  });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  plotNavbarInsurances(insurancesItemsPersonal, insurancesNavbarPersonal);
-  plotNavbarInsurances(insurancesItemsEnterprise, insurancesNavbarEnterprise);
-
-  initializeMap();
-});
+document.addEventListener("DOMContentLoaded", addSmoothScrollToNavbar);
+document.addEventListener("DOMContentLoaded", addServicesToNavbar);
