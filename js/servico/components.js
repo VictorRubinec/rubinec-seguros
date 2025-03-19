@@ -4,8 +4,8 @@ export const ServicesPages = [
     title: "Seguro de Automóveis",
     subtitle: "Seu primeiro passo",
     banner: "../../images/banners/automoveis.jpg",
-    grid: [[1], [2, 1]],
-    types: ["text_simple", "topic_bold", "topic_bold", "image_with_contact"],
+    grid: [[1], [1, 1], [1]],
+    types: ["text_simple", "topic_bold", "topic_bold", "contact_button"],
     content: [
       [
         "O seguro para automóvel tem o objetivo de cobrir danos parciais ou perda total causados ao veículo segurado. Além dos prejuízos de reparo do veículo ou da indenização, a apólice cobre as despesas com o socorro e salvamento do veículo.",
@@ -27,7 +27,7 @@ export const ServicesPages = [
           "Assistência 24hs",
         ],
       },
-      "../../images/utils/content1.jpg",
+      "contact_button",
     ],
     formGrid: [2, 2, 2, 2, 1],
     form: [
@@ -58,7 +58,7 @@ export const ServicesPages = [
         validation: "^\\(\\d{2}\\) \\d{5}-\\d{4}$",
       },
       {
-        name: "carType",
+        name: "type",
         type: "select",
         label: "Tipo do veículo",
         options: [
@@ -71,21 +71,21 @@ export const ServicesPages = [
         required: true,
       },
       {
-        name: "carPlate",
+        name: "plate",
         type: "text",
         label: "Placa do veículo",
         required: true,
         validation: "^[A-Z]{3}-\\d{4}$",
       },
       {
-        name: "carYear",
+        name: "year",
         type: "number",
         label: "Ano do veículo",
         required: true,
         validation: "^\\d{4}$",
       },
       {
-        name: "carModel",
+        name: "model",
         type: "text",
         label: "Modelo do veículo",
         required: true,
@@ -102,7 +102,7 @@ export const ServicesPages = [
     id: "seguro-de-moto",
     title: "Seguro de Moto",
     subtitle: "Proteção completa",
-    banner: "../../images/banners/automoveis.jpg",
+    banner: "../../images/banners/moto.jpg",
     grid: [[1], [1], [1, 1], [1], [1]],
     types: [
       "text_bold",
@@ -131,11 +131,11 @@ export const ServicesPages = [
           "Disponível nos casos em que haja impossibilidade, perda ou esquecimento da chave. Um chaveiro será enviado até o local onde está sua motocicleta, para poder te ajudar.",
         ],
       },
-      "../../images/utils/content2.jpg",
+      "../../images/services/moto.jpg",
       {
         title: "Guincho e reboque:",
         text: [
-          "Caso ocorra uma pane, avaria ou acidente e sua moto não tenha disponibilidade de locomoção, a Central de Assistência Suhai irá providenciar um reboque para levar seu veículo para a oficina mais próxima.",
+          "O reboque de moto é uma assistência que pode ser contratada em seguros de moto, e que é acionada em caso de pane, acidente ou furto.",
         ],
       },
       "contact_button",
@@ -169,21 +169,21 @@ export const ServicesPages = [
         validation: "^\\(\\d{2}\\) \\d{5}-\\d{4}$",
       },
       {
-        name: "motoPlate",
+        name: "plate",
         type: "text",
         label: "Placa do veículo",
         required: true,
         validation: "^[A-Z]{3}-\\d{4}$",
       },
       {
-        name: "motoYear",
+        name: "year",
         type: "number",
         label: "Ano do veículo",
         required: true,
         validation: "^\\d{4}$",
       },
       {
-        name: "motoModel",
+        name: "model",
         type: "text",
         label: "Modelo do veículo",
         required: true,
@@ -200,7 +200,7 @@ export const ServicesPages = [
     id: "seguro-de-bike",
     title: "Seguro de Bike",
     subtitle: "Proteção para sua bike",
-    banner: "../../images/banners/automoveis.jpg",
+    banner: "../../images/banners/bike.jpg",
     grid: [[1], [1, 1], [1], [1]],
     types: [
       "text_simple",
@@ -280,7 +280,7 @@ export const ServicesPages = [
     id: "seguro-de-vida",
     title: "Seguro de Vida",
     subtitle: "Proteção para você e sua família",
-    banner: "../../images/banners/automoveis.jpg",
+    banner: "../../images/banners/vida.jpg",
     grid: [[1], [2, 1], [1]],
     types: [
       "text_simple",
@@ -291,7 +291,7 @@ export const ServicesPages = [
     ],
     content: [
       [
-        "O seguro de vida é um contrato que oferece uma indenização financeira ao segurado ou a seus beneficiários em caso de falecimento, invalidez, acidentes ou outras situações previstas na apólice. Seu principal objetivo é garantir segurança e estabilidade financeira para o segurado e sua família, auxiliando em momentos difíceis.",
+        "O seguro de vida é um contrato que garante uma indenização em dinheiro à família do segurado em caso de morte, acidente, invalidez ou outras situações.",
         "A indenização pode ser utilizada para cobrir despesas como custos com funeral, assistência médica, contas do dia a dia e outras necessidades financeiras. Além disso, o segurado tem a liberdade de escolher os beneficiários, ou seja, as pessoas que receberão o valor segurado. Caso não haja uma designação específica, a indenização será destinada ao cônjuge e/ou herdeiros legais.",
         "Proteja quem você ama! Solicite uma cotação e descubra as melhores opções para o seu perfil.",
       ],
@@ -311,7 +311,7 @@ export const ServicesPages = [
           "Outras",
         ],
       },
-      "../../images/utils/content3.jpg",
+      "../../images/services/vida.jpg",
       "contact_button",
     ],
     formGrid: [2, 1, 1, 1],
@@ -354,7 +354,7 @@ export const ServicesPages = [
     id: "seguro-saude",
     title: "Seguro Saúde",
     subtitle: "Cuidado e proteção",
-    banner: "../../images/banners/automoveis.jpg",
+    banner: "../../images/banners/saude.jpg",
     grid: [[1], [1, 1], [1], [1]],
     types: [
       "text_simple",
@@ -422,7 +422,7 @@ export const ServicesPages = [
         validation: "^\\(\\d{2}\\) \\d{5}-\\d{4}$",
       },
       {
-        name: "qtyPeople",
+        name: "quantity",
         type: "number",
         label: "Quantidade de pessoas",
         required: true,
@@ -439,7 +439,7 @@ export const ServicesPages = [
     id: "previdencia",
     title: "Previdência",
     subtitle: "Planeje o futuro",
-    banner: "../../images/banners/automoveis.jpg",
+    banner: "../../images/banners/previdencia.jpg",
     grid: [[1], [1], [1], [1, 1], [1], [1, 1], [1]],
     types: [
       "text_simple",
@@ -470,7 +470,7 @@ export const ServicesPages = [
           "O PGBL é uma boa opção para contribuintes da Previdência Social, seja no setor público ou privado.",
         ],
       },
-      "../../images/utils/content4.jpg",
+      "../../images/services/previdencia.jpg",
       {
         title: "Previdência Infantil (Prever)",
         text: [
@@ -538,7 +538,7 @@ export const ServicesPages = [
     id: "seguro-residencial",
     title: "Seguro Residencial",
     subtitle: "Proteção para sua casa",
-    banner: "../../images/banners/automoveis.jpg",
+    banner: "../../images/banners/residencial.jpg",
     grid: [[1], [2, 1], [1]],
     types: [
       "text_simple",
@@ -555,7 +555,7 @@ export const ServicesPages = [
         title: "Coberturas básicas:",
         itens: ["Incêndio.", "Explosão.", "Fumaça."],
       },
-      "../../images/utils/content2.jpg",
+      "../../images/services/residencial.jpg",
       {
         title: "Coberturas adicionais:",
         itens: [
@@ -615,11 +615,10 @@ export const ServicesPages = [
     id: "consorcio",
     title: "Consórcio",
     subtitle: "Realize seus sonhos",
-    banner: "../../images/banners/automoveis.jpg",
-    grid: [[1], [1], [2, 2], [1]],
+    banner: "../../images/banners/consorcio.jpg",
+    grid: [[1], [1, 1], [1], [1], [1]],
     types: [
       "text_bold",
-      "title",
       "text_bold",
       "text_bold",
       "text_bold",
@@ -630,30 +629,37 @@ export const ServicesPages = [
       {
         title: "O que é o Consórcio?",
         text: [
-          "É uma forma compartilhada de adquirir crédito sem juros. Funciona assim: um grupo de pessoas com o mesmo objetivo se reúnem, e através do pagamento de parcelas mensais juntam um montante de valores, que será distribuído mensalmente para os contemplados através de sorteio ou lance.",
-          "Tudo isso fiscalizado pelo Banco Central e no nosso caso, administrado pelo Porto Bank, passando toda segurança e credibilidade para você conquistar seu objetivo!",
+          "Consórcio é uma modalidade de compra em que um grupo de pessoas se une para adquirir um bem ou serviço. Os participantes do consórcio são chamados <b>consorciados</b>.",
         ],
       },
-      "Consórcios disponíveis",
       {
-        title: "Consórcio de Imóvel",
+        title: "Como Funciona:",
         text: [
-          "Casa, terreno ou reforma, com parcelas reduzidas até a contemplação.",
+          "Os consorciados pagam parcelas mensais, que formam um fundo comum.",
+          "Esse fundo é utilizado para viabilizar a compra do bem desejado, como imóveis, veículos, caminhões, tratores ou motos.",
+          "Durante o período do consórcio, todos os consorciados são contemplados, seja por sorteio ou por meio de lance.",
         ],
       },
       {
-        title: "Consórcio de Carro",
-        text: ["Conquiste seu carro novo ou seminovo sem entrada e sem juros."],
-      },
-      {
-        title: "Consórcio de Veículo Pesado",
+        title: "Vantagens:",
         text: [
-          "Caminhão, ônibus ou trator, com parcelas reduzidas até a contemplação.",
+          "O consórcio é uma das soluções mais acessíveis e vantajosas para conquistar bens de alto valor, como uma casa nova ou equipamentos essenciais.",
+          "Oferece flexibilidade, juros zero e parcelas que cabem no seu bolso, tornando o planejamento financeiro mais tranquilo.",
+          "É uma forma segura e planejada de adquirir um bem, ideal para quem não tem pressa e valoriza segurança e organização.",
         ],
       },
       {
-        title: "Consórcio Bike",
-        text: ["De urbana a elétrica, sua nova bike é garantida sem juros."],
+        title: "Consórcios de Automóveis, Imóveis, Caminhões, Tratores e Motos",
+        text: [
+          "O consórcio é uma excelente alternativa para quem deseja realizar uma compra importante de forma planejada e sem comprometer seu orçamento.",
+          "Ideal para quem prioriza segurança, tranquilidade e um bom planejamento financeiro.",
+        ],
+      },
+      {
+        title: "Administradora de Consórcios",
+        text: [
+          "A formação dos grupos de consórcio é realizada por uma Administradora de Consórcios, devidamente autorizada e fiscalizada pelo Banco Central do Brasil, garantindo transparência e confiança no processo.",
+        ],
       },
       "contact_button",
     ],
@@ -692,13 +698,12 @@ export const ServicesPages = [
         required: false,
       },
     ],
-    
   },
   {
     id: "equipamentos-portateis",
     title: "Equipamentos Portáteis",
     subtitle: "Proteção para seus aparelhos",
-    banner: "../../images/banners/automoveis.jpg",
+    banner: "../../images/banners/equipamentos-portateis.jpg",
     grid: [[1], [1, 1], [1], [1], [1]],
     types: [
       "text_simple",
@@ -778,7 +783,7 @@ export const ServicesPages = [
         validation: "^\\(\\d{2}\\) \\d{5}-\\d{4}$",
       },
       {
-        name: "equipType",
+        name: "type",
         type: "select",
         label: "Tipo de equipamento",
         options: [
@@ -794,7 +799,7 @@ export const ServicesPages = [
         required: true,
       },
       {
-        name: "equipValue",
+        name: "value",
         type: "text",
         label: "Valor do equipamento",
         required: true,
@@ -812,7 +817,7 @@ export const ServicesPages = [
     id: "seguro-de-condominio",
     title: "Seguro de Condomínio",
     subtitle: "Proteção para seu patrimônio",
-    banner: "../../images/banners/automoveis.jpg",
+    banner: "../../images/banners/condominio.jpg",
     grid: [[1], [2, 1], [1]],
     types: [
       "text_simple",
@@ -830,7 +835,7 @@ export const ServicesPages = [
         title: "Coberturas básicas:",
         itens: ["Incêndio", "Explosão", "Fumaça", "Queda de aeronaves"],
       },
-      "../../images/utils/content2.jpg",
+      "../../images/services/condominio.jpg",
       {
         title: "Coberturas adicionais:",
         itens: [
@@ -862,7 +867,7 @@ export const ServicesPages = [
     formGrid: [1, 1, 2, 2, 1, 1],
     form: [
       {
-        name: "bussinessName",
+        name: "business-name",
         type: "text",
         label: "Nome do condomínio",
         required: true,
@@ -882,7 +887,7 @@ export const ServicesPages = [
       },
       {
         name: "number",
-        type: "text",
+        type: "number",
         label: "Número",
         required: true,
       },
@@ -918,7 +923,7 @@ export const ServicesPages = [
     id: "seguro-empresarial",
     title: "Seguro Empresarial",
     subtitle: "Proteção para sua empresa",
-    banner: "../../images/banners/automoveis.jpg",
+    banner: "../../images/banners/empresarial.jpg",
     grid: [[1], [2, 1], [1]],
     types: [
       "text_simple",
@@ -949,13 +954,13 @@ export const ServicesPages = [
           "Outras coberturas personalizadas",
         ],
       },
-      "../../images/utils/content3.jpg",
+      "../../images/services/empresarial.jpg",
       "contact_button",
     ],
     formGrid: [1, 2, 1, 1],
     form: [
       {
-        name: "businessName",
+        name: "business-name",
         type: "text",
         label: "Nome da empresa",
         required: true,
@@ -992,7 +997,7 @@ export const ServicesPages = [
     id: "previdencia-empresarial",
     title: "Previdência Empresarial",
     subtitle: "Planeje o futuro da sua empresa",
-    banner: "../../images/banners/automoveis.jpg",
+    banner: "../../images/banners/previdencia-empresarial.jpg",
     grid: [[1], [1], [1, 1], [1], [1]],
     types: [
       "text_simple",
@@ -1030,7 +1035,7 @@ export const ServicesPages = [
     formGrid: [1, 2, 1, 1],
     form: [
       {
-        name: "businessName",
+        name: "business-name",
         type: "text",
         label: "Nome da empresa",
         required: true,
@@ -1067,7 +1072,7 @@ export const ServicesPages = [
     id: "responsabilidade-civil",
     title: "Responsabilidade Civil",
     subtitle: "Proteção para você e sua empresa",
-    banner: "../../images/banners/automoveis.jpg",
+    banner: "../../images/banners/responsabilidade-civil.jpg",
     grid: [[1], [1], [1]],
     types: ["text_simple", "topic_bold", "contact_button"],
     content: [
@@ -1099,7 +1104,7 @@ export const ServicesPages = [
     formGrid: [1, 2, 1, 1],
     form: [
       {
-        name: "businessName",
+        name: "business-name",
         type: "text",
         label: "Nome da empresa",
         required: true,
@@ -1136,7 +1141,7 @@ export const ServicesPages = [
     id: "seguro-de-vida-empresarial",
     title: "Seguro de Vida Empresarial",
     subtitle: "Proteção para seus colaboradores",
-    banner: "../../images/banners/automoveis.jpg",
+    banner: "../../images/banners/vida-empresarial.jpg",
     grid: [[1], [2, 1], [1]],
     types: [
       "text_bold",
@@ -1149,7 +1154,7 @@ export const ServicesPages = [
       {
         title: "Por que contratar o Seguro de Vida Empresarial?",
         text: [
-          "A Porto oferece planos completos e acessíveis de proteção e assistência aos funcionários, deixando sua empresa preparada para possíveis situações inesperadas. O seguro de vida empresarial proporciona mais tranquilidade aos colaboradores e seus familiares, além de minimizar impactos ocasionados por eventos inesperados como acidentes ou falecimento.",
+          "Temos planos completos e acessíveis de proteção e assistência aos funcionários, deixando sua empresa preparada para possíveis situações inesperadas. O seguro de vida empresarial proporciona mais tranquilidade aos colaboradores e seus familiares, além de minimizar impactos ocasionados por eventos inesperados como acidentes ou falecimento.",
           "O seguro de vida empresarial pode ser contratado por todos os tipos de empresa, incluindo prestadores de serviço.",
           "Os custos podem ter a participação ou não do colaborador e a empresa poderá deduzir o valor do seguro no Imposto de Renda. Os benefícios podem ser estendidos a cônjuges e filhos.",
         ],
@@ -1170,13 +1175,13 @@ export const ServicesPages = [
           "Outras",
         ],
       },
-      "../../images/utils/content4.jpg",
+      "../../images/services/vida-empresarial.jpg",
       "contact_button",
     ],
     formGrid: [1, 2, 1, 1],
     form: [
       {
-        name: "businessName",
+        name: "business-name",
         type: "text",
         label: "Nome da empresa",
         required: true,
@@ -1213,7 +1218,7 @@ export const ServicesPages = [
     id: "seguro-auto-frota",
     title: "Seguro Auto Frota",
     subtitle: "Proteção para sua frota",
-    banner: "../../images/banners/automoveis.jpg",
+    banner: "../../images/banners/auto-frota.jpg",
     grid: [[1], [1], [4, 4], [1], [1, 1], [1], [1], [1]],
     types: [
       "text_bold",
@@ -1317,7 +1322,7 @@ export const ServicesPages = [
     formGrid: [1, 2, 1, 1],
     form: [
       {
-        name: "businessName",
+        name: "business-name",
         type: "text",
         label: "Nome da empresa",
         required: true,
@@ -1354,7 +1359,7 @@ export const ServicesPages = [
     id: "maquinas-e-equipamentos",
     title: "Máquinas e Equipamentos",
     subtitle: "Proteção para seus bens",
-    banner: "../../images/banners/automoveis.jpg",
+    banner: "../../images/banners/maquinas-equipamentos.jpg",
     grid: [[1], [1, 2]],
     types: ["text_simple", "topic_simple", "image_rectangle", "contact_button"],
     content: [
@@ -1374,13 +1379,13 @@ export const ServicesPages = [
           "Furto simples.",
         ],
       },
-      "../../images/utils/content2.jpg",
+      "../../images/services/maquinas-equipamentos.jpg",
       "contact_button",
     ],
     formGrid: [1, 2, 1, 1],
     form: [
       {
-        name: "businessName",
+        name: "business-name",
         type: "text",
         label: "Nome da empresa",
         required: true,
@@ -1417,7 +1422,7 @@ export const ServicesPages = [
     id: "plano-de-saude-empresarial",
     title: "Plano de Saúde Empresarial",
     subtitle: "Proteção para seus colaboradores",
-    banner: "../../images/banners/automoveis.jpg",
+    banner: "../../images/banners/saude-empresarial.jpg",
     grid: [[1], [1], [1, 1], [1], [1], [1], [1]],
     types: [
       "text_simple",
@@ -1484,17 +1489,17 @@ export const ServicesPages = [
         "Em alguns planos, existe também a possibilidade de desconto na compra de medicamentos, com desconto em folha ou na hora do pagamento.",
       ],
       "contact_button",
-    ],    
+    ],
     formGrid: [1, 1, 2, 1, 1],
     form: [
       {
-        name: "businessName",
+        name: "business-name",
         type: "text",
         label: "Nome da empresa",
         required: true,
       },
       {
-        name: "qtyPeople",
+        name: "quantity",
         type: "number",
         label: "Quantidade de pessoas",
         required: true,
@@ -1531,7 +1536,7 @@ export const ServicesPages = [
     id: "plano-odontologico",
     title: "Plano Odontológico",
     subtitle: "Proteção para sua saúde bucal",
-    banner: "../../images/banners/automoveis.jpg",
+    banner: "../../images/banners/odontologico.jpg",
     grid: [[1], [1], [1], [1]],
     types: ["text_simple", "topic_bold", "topic_bold", "contact_button"],
     content: [
@@ -1562,7 +1567,7 @@ export const ServicesPages = [
     formGrid: [1, 2, 1, 1],
     form: [
       {
-        name: "businessName",
+        name: "business-name",
         type: "text",
         label: "Nome da empresa",
         required: true,

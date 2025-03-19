@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rubinec Seguros</title>
-    <link rel="stylesheet" href="global/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
@@ -38,7 +38,7 @@
       <div class="banner-container">
         <p>Consultoria de seguros sob medida para você</p>
         <h1>Planejando o futuro com tranquilidade</h1>
-        <button>Saiba mais</button>
+        <a href="sobre.html" class="banner-link">Saiba mais</a>
       </div>
     </section>
     <section id="about" class="about-section">
@@ -122,22 +122,25 @@
       </div>
     </section>
 
+    <div id="loading-screen" class="loading-overlay">
+      <div class="spinner"></div>
+    </div>
+
     <footer id="footer">
       <div class="footer-container">
         <img src="images/logo_texto.png" alt="Logo" class="footer-logo" />
         <div class="footer-contact">
           <h1>Contatos</h1>
           <p>atendimento@rubinecseguros.com.br</p>
+          <p>Avenida Carlos Liveiro, 522 - Sala 02 Parte 6 Vila Liveiro</p>
+          <p>CEP 04186-100 - São Paulo - SP</p>
+          <p>(11) 4991-3355</p>
           <p>(11) 97786-6520</p>
-          <p>Rua dos Bobos, 0 - São Paulo</p>
         </div>
       </div>
       <div class="footer-social">
         <div class="social-icons">
-          <a href="https://wa.me/5511977866520">
-            <img src="images/icons/telefone.png" alt="Telefone" />
-          </a>
-          <a href="https://wa.me/5511977866520">
+          <a href="https://maps.app.goo.gl/JX8LzgGLfzH63qkb6">
             <img src="images/icons/localizacao.png" alt="Localizacao" />
           </a>
           <a href="https://wa.me/5511977866520">
@@ -149,8 +152,7 @@
         </div>
       </div>
     </footer>
-
     <script src="js/index/script.js" type="module"></script>
-    <script src="global/script.js" type="module"></script>
+    <script src="js/global/navBar.js" type="module"></script>
   </body>
 </html>

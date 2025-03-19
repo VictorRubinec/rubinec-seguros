@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rubinec Seguros</title>
-    <link rel="stylesheet" href="global/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/servico.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   </head>
   <body>
     <header id="header">
@@ -16,7 +17,7 @@
         <ul>
           <li><a href="index.html" class="nav-item">Home</a></li>
           <li class="dropdown">
-            <a href="index.html#home_services" class="nav-item">Seguros ▼</a>
+            <a href="#home_services" class="nav-item">Seguros ▼</a>
             <div class="dropdown-content">
               <div class="dropdown-section" id="dropdown-section-services">
                 <div class="left-section">
@@ -38,7 +39,7 @@
       <div class="banner-container"></div>
     </section>
 
-    <section id="service-content" class="service-content">
+    <section id="service-section" class="service-section">
       <div class="service-container" id="service-container"></div>
     </section>
 
@@ -46,22 +47,33 @@
       <form id="form" class="form-container" action="" method="dialog"></form>
     </section>
 
+    <div id="success-modal" class="modal-overlay">
+      <div class="modal">
+        <h2>Formulário enviado com sucesso!</h2>
+        <button id="modal-close">Continuar navegando</button>
+      </div>
+    </div>
+
+    <div id="loading-screen" class="loading-overlay">
+      <div class="spinner"></div>
+      
+    </div>
+
     <footer id="footer">
       <div class="footer-container">
         <img src="images/logo_texto.png" alt="Logo" class="footer-logo" />
         <div class="footer-contact">
           <h1>Contatos</h1>
           <p>atendimento@rubinecseguros.com.br</p>
+          <p>Avenida Carlos Liveiro, 522 - Sala 02 Parte 6 Vila Liveiro</p>
+          <p>CEP 04186-100 - São Paulo - SP</p>
+          <p>(11) 4991-3355</p>
           <p>(11) 97786-6520</p>
-          <p>Rua dos Bobos, 0 - São Paulo</p>
         </div>
       </div>
       <div class="footer-social">
         <div class="social-icons">
-          <a href="https://wa.me/5511977866520">
-            <img src="images/icons/telefone.png" alt="Telefone" />
-          </a>
-          <a href="https://wa.me/5511977866520">
+          <a href="https://maps.app.goo.gl/JX8LzgGLfzH63qkb6">
             <img src="images/icons/localizacao.png" alt="Localizacao" />
           </a>
           <a href="https://wa.me/5511977866520">
@@ -74,6 +86,7 @@
       </div>
     </footer>
     <script src="js/servico/script.js" type="module"></script>
-    <script src="global/script.js" type="module"></script>
+    <script src="js/global/navBar.js" type="module"></script>
+    <script src="env.js"></script>
   </body>
 </html>

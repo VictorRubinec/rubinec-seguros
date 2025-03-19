@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rubinec Seguros</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/politicas.css" />
+  </head>
+  <body>
+    <header id="header">
+      <a href="index.html">
+        <img src="images/logo_texto.png" alt="Logo" class="logo" />
+      </a>
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html" class="nav-item">Home</a></li>
+          <li class="dropdown">
+            <a href="#home_services" class="nav-item">Seguros ▼</a>
+            <div class="dropdown-content">
+              <div class="dropdown-section" id="dropdown-section-services">
+                <div class="left-section">
+                  <h1>Para você</h1>
+                </div>
+                <div class="right-section">
+                  <h1>Para sua empresa</h1>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="sobre.html" class="nav-item">Sobre</a></li>
+          <li><a href="#footer" class="nav-item">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="politics-section" class="politics-section">
+      <div class="politics-container">
+        <h1>Política de privacidade</h1>
+        <p>
+          Em tudo que fazemos, buscamos proteger nossos dados e informações.
+          Seus dados pessoais são bens valiosos que devem ser preservados. Por
+          isso você precisa saber exatamente como eles podem ser utilizados.
+          Foi justamente para isso que criamos essa Política de Privacidade.
+        </p>
+        <p>
+          Como coletamos dados pessoais sobre você? Coletamos as informações que
+          você compartilha, mediante consentimento, ao solicitar
+          informações/cotações de nossos produtos e serviços, através do
+          preenchimento dos formulários que disponibilizamos em nosso site.
+        </p>
+        <p>
+          Como usamos os seus dados? Utilizamos seus dados, com o seu
+          consentimento, para: informar oferta de produtos/serviços ou campanhas
+          promocionais; entrar em contato para realizar atendimento; esclarecer
+          suas dúvidas sobre nossos produtos; calcular e enviar as cotações
+          solicitadas.
+        </p>
+        <p>
+          Com quem compartilhamos os seus dados? Os seus dados não são
+          compartilhados com terceiros.
+        </p>
+        <p>
+          Como protegemos os seus dados? Adotamos práticas e tecnologias
+          alinhadas aos padrões técnicos e regulatórios de mercado, bem como
+          controles que são sempre revisados e aprimorados. Seus dados pessoais
+          são armazenados em local seguro, por meio da tecnologia cloud.
+        </p>
+        <p>
+          Quais são os seus direitos em relação aos dados? A qualquer momento,
+          através dos meios de contato disponibilizados em nosso site, você
+          poderá: solicitar informações quais dados pessoais foram armazenados;
+          solicitar a retificação ou atualização dos seus dados pessoais;
+          solicitar a eliminação dos seus dados de nossa base de dados, desde
+          que não exista algum impedimento legal ou regulatório que nos obrigue
+          a mantê-los; solicitar o não recebimento de e-mails marketing, enviados
+          automaticamente pelo nosso site; solicitar o seu cadastro para receber
+          e-mails contendo oferta de produtos/serviços ou campanhas promocionais.
+        </p>
+        <p>
+          Cookies Cookies são arquivos temporários que armazenam informações,
+          mediante consentimento, para melhorar a sua experiência em nosso site.
+          Periodicamente solicitaremos a sua autorização para armazenar esses
+          arquivos.
+        </p>
+        <p>
+          Contato Caso precise de qualquer suporte ou tenha alguma dúvida, pedido
+          ou sugestão em relação a essa Política, por favor entre em contato
+          através de algum dos canais de atendimento divulgados em nosso site.
+        </p>
+        <div class="button-container">
+          <button onclick="lastPage()">voltar</button>
+        </div>
+      </div>
+    </section>
+
+    <div id="loading-screen" class="loading-overlay">
+      <div class="spinner"></div>
+    </div>
+
+    <footer id="footer">
+      <div class="footer-container">
+        <img src="images/logo_texto.png" alt="Logo" class="footer-logo" />
+        <div class="footer-contact">
+          <h1>Contatos</h1>
+          <p>atendimento@rubinecseguros.com.br</p>
+          <p>Avenida Carlos Liveiro, 522 - Sala 02 Parte 6 Vila Liveiro</p>
+          <p>CEP 04186-100 - São Paulo - SP</p>
+          <p>(11) 4991-3355</p>
+          <p>(11) 97786-6520</p>
+        </div>
+      </div>
+      <div class="footer-social">
+        <div class="social-icons">
+          <a href="https://maps.app.goo.gl/JX8LzgGLfzH63qkb6">
+            <img src="images/icons/localizacao.png" alt="Localizacao" />
+          </a>
+          <a href="https://wa.me/5511977866520">
+            <img src="images/icons/whatsapp.png" alt="Whatsapp" />
+          </a>
+          <a href="https://wa.me/5511977866520">
+            <img src="images/icons/instagram.png" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/global/navBar.js" type="module"></script>
+    <script src="js/global/script.js" type="module"></script>
+  </body>
+  <script>
+    function lastPage() {
+      window.history.back();
+    }
+  </script>
+</html>

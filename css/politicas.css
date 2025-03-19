@@ -1,0 +1,52 @@
+.politics-section {
+    background-color: var(--light-gray);
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.politics-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.politics-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.politics-container p {
+    color: var(--dark-gray);
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.politics-container button {
+    background-color: var(--red);
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.politics-container button:hover {
+    background-color: var(--dark-red);
+    transition: 0.3s;
+}

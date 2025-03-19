@@ -2,6 +2,7 @@ import {
   servicesCardsForYou,
   servicesCardsForEnterprise,
 } from "./components.js";
+import { hideLoadingScreen, showPage } from "../global/loading.js";
 
 function ChangeServices(active) {
   const forYou = document.getElementById("services-for-you");
@@ -104,4 +105,35 @@ document.addEventListener("DOMContentLoaded", () => {
   ChangeServices("1");
   loadServices(servicesCardsForYou, containerForYou);
   loadServices(servicesCardsForEnterprise, containerForBusiness);
+
+  hideLoadingScreen();
+  showPage();
 });
+
+function addSmoothScrollToNavbar() {
+  const navLinks = document.querySelectorAll(".nav-item");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const targetId = link.getAttribute("href");
+
+      if (targetId.startsWith("#")) {
+        event.preventDefault();
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+          const navbarHeight = document.querySelector("#header").offsetHeight;
+
+          window.scrollTo({
+            top: targetElement.offsetTop - navbarHeight,
+            behavior: "smooth",
+          });
+        }
+      } else {
+        window.location.href = targetId;
+      }
+    });
+  });
+}
+
+document.addEventListener("DOMContentLoaded", addSmoothScrollToNavbar);
