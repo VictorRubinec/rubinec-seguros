@@ -9,8 +9,8 @@ function addServicesToNavbar() {
   const leftSection = navBarServices.querySelector(".left-section");
   const rightSection = navBarServices.querySelector(".right-section");
 
-  leftSection.innerHTML = "<h1>Para você</h1>"; // Resetando o título
-  rightSection.innerHTML = "<h1>Para sua empresa</h1>"; // Resetando o título
+  leftSection.innerHTML = "<h1>Para você</h1>"; 
+  rightSection.innerHTML = "<h1>Para sua empresa</h1>"; 
 
   servicesCardsForYou.forEach(service => {
     const aTag = document.createElement("a");
@@ -28,3 +28,31 @@ function addServicesToNavbar() {
 }
 
 document.addEventListener("DOMContentLoaded", addServicesToNavbar);
+
+function addSmoothScrollToNavbar() {
+  const navLinks = document.querySelectorAll(".nav-item");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const targetId = link.getAttribute("href");
+
+      if (targetId.startsWith("#")) {
+        event.preventDefault();
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+          const navbarHeight = document.querySelector("#header").offsetHeight;
+
+          window.scrollTo({
+            top: targetElement.offsetTop - navbarHeight,
+            behavior: "smooth",
+          });
+        }
+      } else {
+        window.location.href = targetId;
+      }
+    });
+  });
+}
+
+document.addEventListener("DOMContentLoaded", addSmoothScrollToNavbar);
