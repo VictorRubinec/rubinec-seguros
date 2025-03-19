@@ -1,6 +1,8 @@
 import { successModal } from "./form.js";
 
-import { emailjs_key, emailjs_service_id, emailjs_template_id } from "../../env.js";
+const emailjs_key = window.env.EMAILJS_PUBLIC_KEY;
+const emailjs_template_id = window.env.EMAILJS_TEMPLATE_ID;
+const emailjs_service_id = window.env.EMAILJS_SERVICE_ID;
 
 (function () {
   emailjs.init(emailjs_key);
