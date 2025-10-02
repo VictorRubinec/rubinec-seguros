@@ -1,10 +1,10 @@
 #banner {
-  background-size: auto;
-  background-position: center bottom;
+  background-size: cover; /* Alterado para cover para melhor ajuste */
+  background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat;
   border-bottom: 3px solid var(--red);
   height: 600px;
-  display: none;
+  display: flex; /* Alterado para flex para ser visível */
   justify-content: center;
   align-items: end;
   width: 100%;
@@ -36,7 +36,7 @@
 }
 
 #service-section {
-  display: none;
+  display: flex; /* Alterado para flex para ser visível */
   flex-wrap: wrap;
   justify-content: center;
   padding: 2rem 0;
@@ -54,6 +54,7 @@
   font-size: 2.2rem;
   margin-bottom: 3rem;
   text-transform: uppercase;
+  text-align: center; /* Adicionado para melhor visualização */
 }
 
 .service-container ul {
@@ -62,6 +63,7 @@
   padding: 1rem;
   border-radius: 16px;
   margin-bottom: 2rem;
+  width: 100%; /* Garante que a lista ocupe a largura */
 }
 
 .service-container ul li {
@@ -73,6 +75,7 @@
   justify-content: right;
   margin-bottom: 1rem;
   border-radius: 16px;
+  object-fit: cover; /* Garante que a imagem não distorça */
 }
 
 .img-rectangle {
@@ -180,18 +183,6 @@
   color: var(--light-gray);
 }
 
-.topic-bold ul {
-  list-style: none;
-  background-color: var(--dark-gray-3);
-  padding: 1rem;
-  border-radius: 16px;
-  margin-bottom: 2rem;
-}
-
-.topic-bold ul li {
-  color: var(--light-gray);
-}
-
 /* title */
 .title {
   display: flex;
@@ -213,6 +204,7 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  gap: 2rem; /* Adicionado para espaçamento */
 }
 
 .cols {
@@ -223,7 +215,7 @@
 }
 
 #form-section {
-  display: none;
+  display: flex; /* Alterado para flex para ser visível */
   flex-direction: column;
   align-items: center;
   padding: 3rem 0;
@@ -253,33 +245,22 @@
   text-align: center;
 }
 
-.form-container .form-row {
+.form-container .form-row,
+.form-container .form-row-2,
+.form-container .form-row-3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 90%;
+  gap: 1rem; /* Adicionado para espaçamento */
 }
 
 .form-container .form-row label{
   width: 100%;
 }
 
-.form-container .form-row-2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 90%;
-}
-
 .form-container .form-row-2 label{
   width: 48%;
-}
-
-.form-container .form-row-3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 90%;
 }
 
 .form-container .form-row-3 label{
@@ -395,9 +376,9 @@
   justify-content: center;
   transition: 0.2s;
   margin-top: 3px;
+  flex-shrink: 0; /* Impede que o checkbox encolha */
 }
 
-/* Estilização do check marcado */
 .terms-container input[type="checkbox"]:checked {
   background-color: var(--red);
   border-color: var(--red);
@@ -415,13 +396,11 @@
   display: block;
 }
 
-/* Estilização do texto ao lado */
 .terms-container p {
   margin: 0;
   font-size: 1rem;
 }
 
-/* Estilização do link */
 .terms-container a {
   color: var(--red);
   text-decoration: none;
@@ -493,6 +472,7 @@
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+  z-index: 1001; /* Garante que fique acima de tudo */
 }
 
 .modal-overlay.show {
@@ -530,4 +510,100 @@
 
 #modal-close:hover {
   background: var(--dark-red);
+}
+
+
+/* =============================================== */
+/* ========== CÓDIGO DE RESPONSIVIDADE ========== */
+/* =============================================== */
+
+/* Para tablets (até 992px) */
+@media (max-width: 992px) {
+    .banner-container,
+    .service-container,
+    .form-container {
+        width: 90%;
+    }
+
+    .rows {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-rectangle,
+    .img-rectangle-2,
+    .img-square {
+        width: 100%;
+        height: auto; /* Altura automática para manter proporção */
+        max-width: 500px; /* Limita a largura máxima da imagem */
+    }
+
+    #form-section {
+        padding: 3rem 1rem;
+    }
+}
+
+/* Para celulares (até 576px) */
+/* Para celulares (até 576px) */
+@media (max-width: 576px) {
+    #banner {
+        height: 70vh;
+    }
+    
+    .banner-container {
+        height: auto;
+        padding-bottom: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner-container h1, .service-container h1, .form-container h1 {
+        font-size: 1.8rem;
+    }
+
+    #service-section {
+        padding: 2rem 1rem;
+    }
+    
+    /* NOVA REGRA PARA CORRIGIR O LAYOUT */
+    .rows .cols > div {
+        width: 100% !important; /* Força os componentes a ocuparem 100% da largura */
+        margin-bottom: 1.5rem; /* Adiciona um espaço entre os componentes empilhados */
+    }
+
+    .text-bold h2, .topic-bold h2, .topic-simple h2, .title h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .form-container {
+        width: 100%;
+        padding: 1.5rem 1rem;
+    }
+    
+    .form-container .form-row,
+    .form-container .form-row-2,
+    .form-container .form-row-3 {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    .form-container .form-row-2 label,
+    .form-container .form-row-3 label {
+        width: 100%;
+    }
+
+    .form-container label {
+        width: 100%;
+    }
+
+    .form-container button {
+        width: 90%;
+    }
+
+    .terms-container {
+        width: 100%;
+    }
 }

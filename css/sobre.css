@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   border-bottom: 3px solid var(--red);
   height: 400px;
-  display: none;
+  display: flex; /* Alterado para flex para ser visível */
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -35,7 +35,7 @@
 }
 
 #about {
-  display: none;
+  display: flex; /* Alterado para flex para ser visível */
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -51,6 +51,7 @@
 
 .about-container {
   display: flex;
+  flex-direction: column; /* Organiza o conteúdo em coluna */
   align-items: center;
   justify-content: space-between;
   width: 850px;
@@ -74,13 +75,16 @@
 .about-text-container {
   display: flex;
   justify-content: space-between;
+  align-items: center; /* Adicionado para melhor alinhamento */
   margin: 4rem 0;
+  width: 100%; /* Garante que o container ocupe a largura */
 }
 
 .about-text-container img {
   width: 350px;
   height: 200px;
   border-radius: 16px;
+  object-fit: cover; /* Garante que a imagem não distorça */
 }
 
 .about-text-content {
@@ -104,7 +108,7 @@
 }
 
 #mission {
-  display: none;
+  display: flex; /* Alterado para flex para ser visível */
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -146,4 +150,78 @@
   color: var(--white);
   line-height: 1.5;
   margin-bottom: 1rem;
+  text-align: center; /* Centraliza o texto da missão */
+}
+
+
+/* =============================================== */
+/* ========== CÓDIGO DE RESPONSIVIDADE ========== */
+/* =============================================== */
+
+/* Para tablets (até 992px) */
+@media (max-width: 992px) {
+  #about, #mission {
+    padding: 3rem 2rem;
+  }
+
+  .banner-container,
+  .about-container,
+  .mission-container {
+    width: 90%;
+  }
+
+  .about-text-container {
+    flex-direction: column; /* Empilha a imagem e o texto */
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .about-text-container:nth-child(odd) {
+    flex-direction: column-reverse; /* Inverte a ordem para variar o layout */
+  }
+  
+  .about-text-container img,
+  .about-text-content {
+    width: 100%; /* Faz ambos ocuparem a largura total */
+  }
+
+  .about-text-content h1 {
+    text-align: center; /* Centraliza os títulos quando empilhado */
+  }
+}
+
+/* Para celulares (até 576px) */
+@media (max-width: 576px) {
+  #banner {
+    height: 60vh;
+  }
+  
+  .banner-container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .banner-container h1 {
+    font-size: 2rem;
+  }
+  
+  #about, #mission {
+    padding: 3rem 1rem;
+  }
+
+  .about-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-text-container img {
+    height: auto; /* Altura automática para a imagem manter a proporção */
+  }
+
+  .mission-title h1 {
+    font-size: 1.5rem;
+  }
+
+  .mission-title img {
+    height: 40px;
+  }
 }

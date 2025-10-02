@@ -50,3 +50,38 @@
     background-color: var(--dark-red);
     transition: 0.3s;
 }
+
+/* =============================================== */
+/* ========== CÓDIGO DE RESPONSIVIDADE ========== */
+/* =============================================== */
+
+/* Para tablets (até 768px) */
+@media (max-width: 768px) {
+    .politics-section {
+        padding: 30px 15px; /* Reduz o padding da seção geral */
+    }
+
+    .politics-container {
+        padding: 15px; /* Reduz o padding interno do container */
+    }
+}
+
+/* Para celulares (até 576px) */
+@media (max-width: 576px) {
+    .politics-section {
+        padding: 20px 10px; /* Reduz ainda mais o padding */
+    }
+    
+    .politics-container h1 {
+        font-size: 1.5rem; /* Diminui o tamanho do título principal */
+    }
+
+    .politics-container p {
+        font-size: 14px; /* Diminui um pouco a fonte para caber mais texto */
+    }
+
+    .politics-container button {
+        padding: 12px 20px; /* Diminui o padding do botão */
+        font-size: 14px;
+    }
+}

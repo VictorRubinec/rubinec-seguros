@@ -163,7 +163,7 @@ body {
 }
 
 #footer {
-  display: none;
+  display: flex; /* Alterado para flex para ser visível */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -219,3 +219,62 @@ body {
   height: 30px;
 }
 
+
+/* =============================================== */
+/* ========== CÓDIGO DE RESPONSIVIDADE ========== */
+/* =============================================== */
+
+/* Para tablets (até 992px) */
+@media (max-width: 992px) {
+  body {
+    padding-top: 100px; /* Ajusta o espaçamento do corpo para o novo tamanho do header */
+  }
+
+  #header {
+    min-height: 100px;
+    padding: 0 2rem; /* Diminui o espaçamento lateral do cabeçalho */
+  }
+
+  .footer-container,
+  .footer-social {
+    width: 90%; /* Usa porcentagem para a largura do rodapé */
+  }
+}
+
+/* Para celulares (até 768px) */
+@media (max-width: 768px) {
+  body {
+    padding-top: 80px; /* Reduz ainda mais para o cabeçalho menor */
+  }
+
+  #header {
+    min-height: 80px;
+    padding: 0 1rem;
+  }
+
+  #header .logo {
+    height: 40px; /* Diminui o tamanho do logo */
+  }
+
+  #navbar {
+    /* Esconde a barra de navegação. Aqui entraria a lógica do menu hambúrguer */
+    display: none;
+  }
+  
+  .footer-container {
+    flex-direction: column; /* Empilha os itens do rodapé */
+    align-items: center;
+    text-align: center;
+    gap: 3rem; /* Adiciona um espaço entre os itens empilhados */
+    margin-bottom: 3rem;
+  }
+
+  .footer-contact {
+    margin-right: 0;
+  }
+
+  .footer-social {
+    justify-content: center; /* Centraliza os ícones sociais */
+    padding: 1rem 0;
+  }
+}
