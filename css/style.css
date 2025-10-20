@@ -13,6 +13,7 @@
   --light-red-2: #ffe6e6;
   --dark-red: #8b0000;
 }
+
 *,
 *::before,
 *::after {
@@ -46,6 +47,7 @@ body {
 
 #header .logo {
   height: 50px;
+  z-index: 1101;
 }
 
 #navbar ul {
@@ -155,8 +157,13 @@ body {
 }
 
 @keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .loading-overlay.hidden {
@@ -165,7 +172,7 @@ body {
 }
 
 #footer {
-  display: flex; /* Alterado para flex para ser visível */
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -221,37 +228,79 @@ body {
   height: 30px;
 }
 
+#menu-mobile-button {
+  display: none;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  z-index: 1100;
+}
 
-/* =============================================== */
-/* ========== CÓDIGO DE RESPONSIVIDADE ========== */
-/* =============================================== */
+#hamburger-icon {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: var(--white);
+  position: relative;
+  transition: background-color 0.3s ease-in-out;
+}
 
-/* Para tablets (até 992px) */
+#hamburger-icon::before,
+#hamburger-icon::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--white);
+  position: absolute;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+#hamburger-icon::before {
+  top: -6px;
+}
+
+#hamburger-icon::after {
+  bottom: -6px;
+}
+
+#navbar.active #hamburger-icon {
+  background-color: transparent;
+}
+
+#navbar.active #hamburger-icon::before {
+  transform: translateY(6px) rotate(45deg);
+}
+
+#navbar.active #hamburger-icon::after {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
 @media (max-width: 992px) {
   body {
-    padding-top: 100px; /* Ajusta o espaçamento do corpo para o novo tamanho do header */
+    padding-top: 100px;
   }
 
   #header {
     min-height: 100px;
-    padding: 0 2rem; /* Diminui o espaçamento lateral do cabeçalho */
+    padding: 0 2rem;
   }
 
   .footer-container,
   .footer-social {
-    width: 90%; /* Usa porcentagem para a largura do rodapé */
+    width: 90%;
   }
 
-  .footer-container img{
-    /* esconder */
+  .footer-container img {
     display: none;
   }
 }
 
-/* Para celulares (até 768px) */
 @media (max-width: 768px) {
   body {
-    padding-top: 80px; /* Reduz ainda mais para o cabeçalho menor */
+    padding-top: 80px;
   }
 
   #header {
@@ -260,19 +309,172 @@ body {
   }
 
   #header .logo {
-    height: 40px; /* Diminui o tamanho do logo */
+    height: 40px;
+  }
+
+  #menu-mobile-button {
+    display: block;
   }
 
   #navbar {
-    /* Esconde a barra de navegação. Aqui entraria a lógica do menu hambúrguer */
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 1050;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 100px;
+    padding-bottom: 3rem;
+    overflow-y: auto;
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
+    pointer-events: none;
   }
-  
+
+  #navbar.active {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: auto;
+  }
+
+  #navbar ul#menu-list {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  #navbar ul li {
+    margin: 0;
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-item {
+    font-size: 1.8rem;
+    color: var(--white);
+    width: 100%;
+  }
+
+  #navbar ul#menu-list li.dropdown {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  #navbar ul#menu-list>li:not(.dropdown)>a.nav-item {
+    display: block;
+    width: 100%;
+    padding: 1.5rem 0;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease;
+  }
+
+  #navbar ul#menu-list>li:not(.dropdown)>a.nav-item:hover {
+    background-color: var(--light-black-2);
+  }
+
+  #navbar ul#menu-list li.dropdown>a.nav-item {
+    display: block;
+    width: 100%;
+    padding: 1.5rem 0;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease;
+    position: relative;
+  }
+
+  #navbar ul#menu-list li.dropdown>a.nav-item::after {
+    font-family: monospace;
+    font-size: 2rem;
+    position: absolute;
+    right: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+    color: var(--gray);
+  }
+
+  .dropdown-content {
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+    width: 100%;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+  }
+
+  #navbar ul#menu-list li.dropdown.active>.dropdown-content {
+    max-height: 2000px;
+    padding: 1rem 0;
+    transition: max-height 0.5s ease-in;
+  }
+
+  .dropdown-section {
+    flex-direction: column;
+    padding: 0;
+    border: none;
+    width: 100%;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+    border: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  .dropdown-section h1 {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    padding: 0;
+  }
+
+  .left-section h1 {
+    margin-top: 0.5rem;
+  }
+
+  .dropdown-section a {
+    display: block;
+    width: 100%;
+    color: var(--gray);
+    font-size: 1.5rem;
+    padding: 12px 0;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+
+  .dropdown-section a:hover {
+    background-color: var(--light-black-2);
+    color: var(--white);
+  }
+
+  .dropdown-content {
+    padding-left: 0;
+  }
+
   .footer-container {
-    flex-direction: column; /* Empilha os itens do rodapé */
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 3rem; /* Adiciona um espaço entre os itens empilhados */
+    gap: 3rem;
     margin-bottom: 3rem;
   }
 
@@ -281,7 +483,7 @@ body {
   }
 
   .footer-social {
-    justify-content: center; /* Centraliza os ícones sociais */
+    justify-content: center;
     padding: 1rem 0;
   }
 }

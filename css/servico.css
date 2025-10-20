@@ -486,7 +486,6 @@
   opacity: 0;
   transition: opacity 0.3s ease, visibility 0s linear 0.3s;
   z-index: 1001;
-  /* Garante que fique acima de tudo */
 }
 
 .modal-overlay.show {
@@ -526,12 +525,6 @@
   background: var(--dark-red);
 }
 
-
-/* =============================================== */
-/* ========== CÓDIGO DE RESPONSIVIDADE ========== */
-/* =============================================== */
-
-/* Para tablets (até 992px) */
 @media (max-width: 992px) {
 
   .banner-container,
@@ -550,9 +543,7 @@
   .img-square {
     width: 100%;
     height: auto;
-    /* Altura automática para manter proporção */
     max-width: 500px;
-    /* Limita a largura máxima da imagem */
   }
 
   #form-section {
@@ -560,7 +551,6 @@
   }
 }
 
-/* Para celulares (até 576px) */
 @media (max-width: 576px) {
   #banner {
     height: 50vh;
@@ -583,7 +573,6 @@
     padding: 2rem 1rem;
   }
 
-  /* NOVA REGRA PARA CORRIGIR O LAYOUT */
   .rows .cols>div {
     width: 100% !important;
     margin-bottom: 0rem;

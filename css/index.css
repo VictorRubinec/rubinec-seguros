@@ -340,7 +340,7 @@
 .services-card img {
   width: 100%;
   height: 230px;
-  object-fit: cover; /* Adicionado para a imagem não distorcer */
+  object-fit: cover;
   border-radius: 16px 16px 0 0;
 }
 
@@ -378,12 +378,6 @@
   background-color: var(--dark-red);
 }
 
-
-/* =============================================== */
-/* ========== CÓDIGO DE RESPONSIVIDADE ========== */
-/* =============================================== */
-
-/* Para tablets (até 992px) */
 @media (max-width: 992px) {
   .banner-container,
   .about-container,
@@ -414,16 +408,15 @@
   }
 }
 
-/* Para celulares (até 576px) - Ponto de quebra menor e mais específico */
 @media (max-width: 576px) {
   #home_image {
-    height: 50vh; /* Altura do banner 80% da tela */
-    background-size: cover; /* Força a imagem a cobrir a área */
-    background-position: 30%; /* Centraliza a imagem */
+    height: 50vh; 
+    background-size: cover; 
+    background-position: 30%;
   }
 
   .banner-container {
-    padding: 0 1rem; /* Adiciona um respiro nas laterais */
+    padding: 0 1rem; 
     align-items: center;
     text-align: center;
     width: 100%;
@@ -459,17 +452,15 @@
 
   .about-image {
       width: 100%;
-      height: auto; /* Deixa a altura se ajustar à largura */
+      height: auto; 
   }
   
   .about-midia-image {
-    /* Garante que a imagem dentro do container não estoure */
     width: 100%;
     overflow: hidden;
   }
 
   .about-midia-image img {
-    /* Faz a imagem ser flexível */
     max-width: 100%;
     height: auto;
   }
@@ -489,7 +480,6 @@
   }
 
   .services-container {
-      /* Remove o calc() e deixa o flexbox cuidar do alinhamento */
       width: 100%;
   }
 
