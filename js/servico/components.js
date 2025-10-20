@@ -481,19 +481,19 @@ export const ServicesPages = [
       {
         title: "Vantagens da previdência privada infantil:",
         itens: [
-          "Pode ser uma herança financeira para as gerações futuras.",
-          "Pode ser uma forma de proteção no caso do falecimento do titular da conta.",
-          "Pode oferecer rendimentos melhores do que a poupança.",
-          "Pode ser um complemento à previdência social.",
+          "Pode ser uma herança financeira para as gerações futuras",
+          "Pode ser uma forma de proteção no caso do falecimento do titular da conta",
+          "Pode oferecer rendimentos melhores do que a poupança",
+          "Pode ser um complemento à previdência social",
         ],
       },
       {
         title: "Como funciona a previdência privada?",
         itens: [
-          "O responsável legal do menor contrata o plano.",
-          "O dinheiro é aplicado no mercado financeiro.",
-          "O montante cresce ao longo do tempo, devido aos juros.",
-          "O resgate pode ser planejado para uma data específica, como a maioridade da criança.",
+          "O responsável legal do menor contrata o plano",
+          "O dinheiro é aplicado no mercado financeiro",
+          "O montante cresce ao longo do tempo, devido aos juros",
+          "O resgate pode ser planejado para uma data específica, como a maioridade da criança",
         ],
       },
       "contact_button",
@@ -553,24 +553,24 @@ export const ServicesPages = [
       ],
       {
         title: "Coberturas básicas:",
-        itens: ["Incêndio.", "Explosão.", "Fumaça."],
+        itens: ["Incêndio", "Explosão", "Fumaça"],
       },
       "../../images/services/residencial.jpg",
       {
         title: "Coberturas adicionais:",
         itens: [
-          "Danos morais.",
-          "Subtração de bicicletas.",
-          "Desmoronamento.",
-          "Vazamento de tubulações.",
-          "Danos elétricos.",
-          "Impacto de veículos.",
-          "Vendaval, furacão, ciclone, tornado e queda de granizo.",
-          "Quebra de vidros.",
-          "Responsabilidade civil familiar.",
-          "Subtração de bens.",
-          "Escritório em residência.",
-          "Perda ou pagamento de aluguel.",
+          "Danos morais",
+          "Subtração de bicicletas",
+          "Desmoronamento",
+          "Vazamento de tubulações",
+          "Danos elétricos",
+          "Impacto de veículos",
+          "Vendaval, furacão, ciclone, tornado e queda de granizo",
+          "Quebra de vidros",
+          "Responsabilidade civil familiar",
+          "Subtração de bens",
+          "Escritório em residência",
+          "Perda ou pagamento de aluguel",
         ],
       },
       "contact_button",
@@ -741,15 +741,15 @@ export const ServicesPages = [
       {
         title: "Para equipamentos adquiridos fora do Brasil:",
         itens: [
-          "Quando adquirido no exterior, a cotação do equipamento deve ser realizada em moeda nacional e informada no campo <b>Valor da Nota Fiscal</b>.",
-          "Em caso de documentos em língua estrangeira, diferente do inglês, será necessário documento com as especificações da marca, modelo e número de série.",
+          "Quando adquirido no exterior, a cotação do equipamento deve ser realizada em moeda nacional e informada no campo <b>Valor da Nota Fiscal</b>",
+          "Em caso de documentos em língua estrangeira, diferente do inglês, será necessário documento com as especificações da marca, modelo e número de série",
         ],
       },
       {
         title:
           "Para equipamentos em que a Nota Fiscal está em nome de terceiros:",
         itens: [
-          "Em caso de Nota Fiscal com nome diferente do segurado, será exigida carta de doação ou documento que comprove a aquisição.",
+          "Em caso de Nota Fiscal com nome diferente do segurado, será exigida carta de doação ou documento que comprove a aquisição",
         ],
       },
       "contact_button",
@@ -1249,48 +1249,48 @@ export const ServicesPages = [
       {
         title: "Danos a terceiros",
         itens: [
-          "Garante a cobertura de gastos em reparo de danos a bens materiais patrimoniais e danos corporais causados a terceiros em acidentes.",
+          "Garante a cobertura de gastos em reparo de danos a bens materiais patrimoniais e danos corporais causados a terceiros em acidentes",
         ],
       },
       {
         title: "Assistência 24h compacta",
         itens: [
-          "Assistência para passageiros e veículos com: guincho 100 km para pane e 2000 km para sinistro, chaveiro, passagens ao destino ou retorno, reaver veículo, hospedagem e outros.",
+          "Assistência para passageiros e veículos com: guincho 100 km para pane e 2000 km para sinistro, chaveiro, passagens ao destino ou retorno, reaver veículo, hospedagem e outros",
         ],
       },
       {
         title: "Reposição de 0km por até 6 meses",
         itens: [
-          "Garante a reposição do bem, sem nenhum custo para o cliente durante o prazo de 6 meses, desde que estejam nas condições preestabelecidas no contrato.",
+          "Garante a reposição do bem, sem nenhum custo para o cliente durante o prazo de 6 meses, desde que estejam nas condições preestabelecidas no contrato",
         ],
       },
       {
         title: "Danos Morais e Estéticos",
         itens: [
-          "Reembolsa a indenização paga a terceiros — em decorrência de danos morais — envolvidos em acidente de trânsito com o veículo segurado, coberto e indenizável devido a um acionamento judicial. Há, também, as opções de 2º risco, ou seja, quando há necessidade de contratar valores excedentes à contratação da mesma cobertura em uma congênere.",
+          "Reembolsa a indenização paga a terceiros — em decorrência de danos morais — envolvidos em acidente de trânsito com o veículo segurado, coberto e indenizável devido a um acionamento judicial. Há, também, as opções de 2º risco, ou seja, quando há necessidade de contratar valores excedentes à contratação da mesma cobertura em uma congênere",
         ],
       },
       {
         title: "Danos Materiais e Corporais a terceiros – Desatrelado",
         itens: [
-          "Cobre eventuais danos corporais e/ou patrimoniais de terceiros. Oferece ainda, as opções de 2º risco, quando há necessidade de contratar valores excedentes a contratação da mesma cobertura em uma congênere. Entende-se como desatrelado, a parte do veículo (reboque ou semirreboque) quando desprendida do cavalo mecânico/rebocador.",
+          "Cobre eventuais danos corporais e/ou patrimoniais de terceiros. Oferece ainda, as opções de 2º risco, quando há necessidade de contratar valores excedentes a contratação da mesma cobertura em uma congênere. Entende-se como desatrelado, a parte do veículo (reboque ou semirreboque) quando desprendida do cavalo mecânico/rebocador",
         ],
       },
       {
         title: "Danos Materiais e Corporais a terceiros – Garantia única",
         itens: [
-          "Cobre eventuais danos corporais e/ou patrimoniais de terceiros na mesma garantia, dando liberdade ao segurado de utilizá-la no evento de sinistro conforme maior necessidade. Entende-se por 2º risco o critério de contratação de valor complementar desta cobertura, em uma congênere.",
+          "Cobre eventuais danos corporais e/ou patrimoniais de terceiros na mesma garantia, dando liberdade ao segurado de utilizá-la no evento de sinistro conforme maior necessidade. Entende-se por 2º risco o critério de contratação de valor complementar desta cobertura, em uma congênere",
         ],
       },
       {
         title: "Carroceria e equipamentos",
         itens: [
-          "Cobertura para itens acoplados ao veículo. Exemplo: plataforma, munk, caçamba, entre outros.",
+          "Cobertura para itens acoplados ao veículo. Exemplo: plataforma, munk, caçamba, entre outros",
         ],
       },
       {
         title: "Acessório",
-        itens: ["Cobertura para som e imagem."],
+        itens: ["Cobertura para som e imagem"],
       },
       "Quais são as cláusulas que podem ser contratadas para sua frota de veículos",
       {
@@ -1302,19 +1302,19 @@ export const ServicesPages = [
       {
         title: "Despesas extraordinárias:",
         itens: [
-          "Contratação de importância extra limitada aos critérios da seguradora, que será reembolsada ao segurado em momento de sinistro exclusivo de indenização integral.",
+          "Contratação de importância extra limitada aos critérios da seguradora, que será reembolsada ao segurado em momento de sinistro exclusivo de indenização integral",
         ],
       },
       {
         title: "Extensão de perímetro:",
         itens: [
-          "Garante atendimento, exclusivo para o veículo segurado, em caso de sinistro, na Argentina, Paraguai, Uruguai, Chile e Bolívia.",
+          "Garante atendimento, exclusivo para o veículo segurado, em caso de sinistro, na Argentina, Paraguai, Uruguai, Chile e Bolívia",
         ],
       },
       {
         title: "Extensão de cobertura para veículos de rebocados:",
         itens: [
-          "Cobre danos materiais ocasionados ao veículo rebocado de terceiros (automotor de via terrestre) em poder do segurado. Cobre danos materiais e/ou corporais a terceiros pelo veículo rebocado durante uma operação de reboque.",
+          "Cobre danos materiais ocasionados ao veículo rebocado de terceiros (automotor de via terrestre) em poder do segurado. Cobre danos materiais e/ou corporais a terceiros pelo veículo rebocado durante uma operação de reboque",
         ],
       },
       "contact_button",
@@ -1370,13 +1370,13 @@ export const ServicesPages = [
         title:
           "Coberturas que podem ser contratadas em complemento à cobertura básica e que oferecem ainda mais segurança e tranquilidade a você:",
         itens: [
-          "Danos elétricos.",
-          "Içamento, carga e descarga.",
-          "Perda e/ou pagamento de aluguel (PI: 6 meses).",
-          "Responsabilidade civil máquinas.",
-          "Equipamentos próximos à água.",
-          "Responsabilidade civil operador.",
-          "Furto simples.",
+          "Danos elétricos",
+          "Içamento, carga e descarga",
+          "Perda e/ou pagamento de aluguel (PI: 6 meses)",
+          "Responsabilidade civil máquinas",
+          "Equipamentos próximos à água",
+          "Responsabilidade civil operador",
+          "Furto simples",
         ],
       },
       "../../images/services/maquinas-equipamentos.jpg",
@@ -1441,48 +1441,48 @@ export const ServicesPages = [
       {
         title: "Principais características:",
         itens: [
-          "Garante acesso a uma rede médica e hospitalar.",
-          "Pode ser pago integralmente pela empresa ou ter uma co-participação financeira dos funcionários.",
-          "A empresa negocia melhores condições e preços com a operadora de saúde.",
-          "A cobertura e os benefícios podem ser pré-definidos pela empresa ou oferecidos aos funcionários.",
-          "É regulamentado pela Agência Nacional de Saúde Suplementar (ANS).",
+          "Garante acesso a uma rede médica e hospitalar",
+          "Pode ser pago integralmente pela empresa ou ter uma co-participação financeira dos funcionários",
+          "A empresa negocia melhores condições e preços com a operadora de saúde",
+          "A cobertura e os benefícios podem ser pré-definidos pela empresa ou oferecidos aos funcionários",
+          "É regulamentado pela Agência Nacional de Saúde Suplementar (ANS)",
         ],
       },
       {
         title: "Vantagens do plano de saúde empresarial:",
         itens: [
-          "Aumenta a produtividade e melhora a qualidade de vida no trabalho.",
-          "Reduz significativamente o número de atestados e afastamentos.",
-          "É um dos pilares para a entidade ser bem-vista no mercado.",
+          "Aumenta a produtividade e melhora a qualidade de vida no trabalho",
+          "Reduz significativamente o número de atestados e afastamentos",
+          "É um dos pilares para a entidade ser bem-vista no mercado",
         ],
       },
       {
         title: "Quem pode ter acesso ao plano de saúde empresarial?",
         itens: [
-          "Funcionários da empresa.",
-          "Dependentes dos funcionários.",
-          "Trabalhadores temporários.",
-          "Colaboradores aposentados.",
+          "Funcionários da empresa",
+          "Dependentes dos funcionários",
+          "Trabalhadores temporários",
+          "Colaboradores aposentados",
         ],
       },
       {
         title:
           "Para escolher o plano de saúde empresarial, é importante considerar os seguintes critérios:",
         itens: [
-          "Faixa etária.",
-          "Gênero.",
-          "Estado civil.",
-          "Presença de doenças crônicas.",
+          "Faixa etária",
+          "Gênero",
+          "Estado civil",
+          "Presença de doenças crônicas",
         ],
       },
       {
         title: "Conheça as opções:",
         itens: [
-          "Ambulatorial, engloba consultas médicas em clínicas e, ou, consultórios, exames e tratamentos ambulatoriais.",
-          "Hospitalar, para assistência hospitalar, como pronto-socorro e, ou, internações com possibilidade de serviço obstetra, a depender da empresa.",
-          "Segmentado, pode englobar serviços ambulatoriais, internação, cirurgia, tratamentos e obstetrícia.",
-          "Odontológico, exclusivo para odontologia com coberturas a depender da negociação.",
-          "Teleatendimento: disponibilização de serviços através de plataforma online, atendendo funcionários em diferentes localidades, diminuindo gastos e otimizando tempo, com extensão para atendimento presencial quando necessário.",
+          "Ambulatorial, engloba consultas médicas em clínicas e, ou, consultórios, exames e tratamentos ambulatoriais",
+          "Hospitalar, para assistência hospitalar, como pronto-socorro e, ou, internações com possibilidade de serviço obstetra, a depender da empresa",
+          "Segmentado, pode englobar serviços ambulatoriais, internação, cirurgia, tratamentos e obstetrícia",
+          "Odontológico, exclusivo para odontologia com coberturas a depender da negociação",
+          "Teleatendimento: disponibilização de serviços através de plataforma online, atendendo funcionários em diferentes localidades, diminuindo gastos e otimizando tempo, com extensão para atendimento presencial quando necessário",
         ],
       },
       [
@@ -1547,19 +1547,19 @@ export const ServicesPages = [
       {
         title: "Vantagens do plano odontológico:",
         itens: [
-          "Promove a saúde bucal e o bem-estar dos funcionários.",
-          "Oferece preços acessíveis.",
-          "Os planos também oferecem uma Rede Referenciada com milhares de consultórios, clínicas. Assim, quando um procedimento coberto é realizado por esta rede, o prestador de serviço recebe diretamente e o segurado não precisa pagar pelo atendimento.",
-          "Melhora a qualidade de vida dos funcionários.",
-          "Pode ser deduzido do Imposto de Renda, desde que comprovados e dentro dos critérios da legislação tributária.",
+          "Promove a saúde bucal e o bem-estar dos funcionários",
+          "Oferece preços acessíveis",
+          "Os planos também oferecem uma Rede Referenciada com milhares de consultórios, clínicas. Assim, quando um procedimento coberto é realizado por esta rede, o prestador de serviço recebe diretamente e o segurado não precisa pagar pelo atendimento",
+          "Melhora a qualidade de vida dos funcionários",
+          "Pode ser deduzido do Imposto de Renda, desde que comprovados e dentro dos critérios da legislação tributária",
         ],
       },
       {
         title: "Como funciona:",
         itens: [
-          "A empresa contrata uma operadora odontológica.",
-          "O funcionário paga um valor mensal, que varia de acordo com a empresa e os serviços cobertos.",
-          "O funcionário pode marcar consultas e procedimentos com profissionais da rede credenciada ou ir a um dentista particular e solicitar o reembolso.",
+          "A empresa contrata uma operadora odontológica",
+          "O funcionário paga um valor mensal, que varia de acordo com a empresa e os serviços cobertos",
+          "O funcionário pode marcar consultas e procedimentos com profissionais da rede credenciada ou ir a um dentista particular e solicitar o reembolso",
         ],
       },
       "contact_button",

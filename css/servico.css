@@ -1,10 +1,13 @@
 #banner {
-  background-size: cover; /* Alterado para cover para melhor ajuste */
-  background-position: center; /* Centraliza a imagem */
+  background-size: cover;
+  /* Alterado para cover para melhor ajuste */
+  background-position: center;
+  /* Centraliza a imagem */
   background-repeat: no-repeat;
   border-bottom: 3px solid var(--red);
   height: 600px;
-  display: flex; /* Alterado para flex para ser visível */
+  display: flex;
+  /* Alterado para flex para ser visível */
   justify-content: center;
   align-items: end;
   width: 100%;
@@ -36,7 +39,8 @@
 }
 
 #service-section {
-  display: flex; /* Alterado para flex para ser visível */
+  display: flex;
+  /* Alterado para flex para ser visível */
   flex-wrap: wrap;
   justify-content: center;
   padding: 2rem 0;
@@ -52,9 +56,10 @@
 
 .service-container h1 {
   font-size: 2.2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   text-transform: uppercase;
-  text-align: center; /* Adicionado para melhor visualização */
+  text-align: center;
+  /* Adicionado para melhor visualização */
 }
 
 .service-container ul {
@@ -63,19 +68,23 @@
   padding: 1rem;
   border-radius: 16px;
   margin-bottom: 2rem;
-  width: 100%; /* Garante que a lista ocupe a largura */
+  width: 100%;
+  /* Garante que a lista ocupe a largura */
 }
 
 .service-container ul li {
   color: var(--light-gray);
 }
 
-.img-rectangle, .img-rectangle-2, .img-square {
+.img-rectangle,
+.img-rectangle-2,
+.img-square {
   display: flex;
   justify-content: right;
   margin-bottom: 1rem;
   border-radius: 16px;
-  object-fit: cover; /* Garante que a imagem não distorça */
+  object-fit: cover;
+  /* Garante que a imagem não distorça */
 }
 
 .img-rectangle {
@@ -129,7 +138,7 @@
 
 /* text simple */
 
-.text-simple p{
+.text-simple p {
   font-size: 1rem;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -204,7 +213,8 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  gap: 2rem; /* Adicionado para espaçamento */
+  gap: 2rem;
+  /* Adicionado para espaçamento */
 }
 
 .cols {
@@ -215,7 +225,8 @@
 }
 
 #form-section {
-  display: flex; /* Alterado para flex para ser visível */
+  display: flex;
+  /* Alterado para flex para ser visível */
   flex-direction: column;
   align-items: center;
   padding: 3rem 0;
@@ -252,18 +263,19 @@
   flex-direction: row;
   justify-content: space-between;
   width: 90%;
-  gap: 1rem; /* Adicionado para espaçamento */
+  gap: 1rem;
+  /* Adicionado para espaçamento */
 }
 
-.form-container .form-row label{
+.form-container .form-row label {
   width: 100%;
 }
 
-.form-container .form-row-2 label{
+.form-container .form-row-2 label {
   width: 48%;
 }
 
-.form-container .form-row-3 label{
+.form-container .form-row-3 label {
   width: 30%;
 }
 
@@ -289,9 +301,9 @@
   border-bottom: 2px solid var(--dark-gray-3);
 }
 
-.form-container label input + span,
-.form-container label textarea + span,
-.form-container label select + span {
+.form-container label input+span,
+.form-container label textarea+span,
+.form-container label select+span {
   position: absolute;
   left: 10px;
   top: 10px;
@@ -301,19 +313,19 @@
   transition: 0.3s ease;
 }
 
-.form-container label input:focus + span,
-.form-container label textarea:focus + span,
-.form-container label select:focus + span,
-.form-container label input:not(:placeholder-shown) + span,
-.form-container label textarea:not(:placeholder-shown) + span,
-.form-container label select:not(:placeholder-shown) + span {
+.form-container label input:focus+span,
+.form-container label textarea:focus+span,
+.form-container label select:focus+span,
+.form-container label input:not(:placeholder-shown)+span,
+.form-container label textarea:not(:placeholder-shown)+span,
+.form-container label select:not(:placeholder-shown)+span {
   top: -10px;
   font-size: 0.7em;
   font-weight: 600;
 }
 
-.form-container label select:valid + span,
-.form-container label select:focus + span {
+.form-container label select:valid+span,
+.form-container label select:focus+span {
   top: -10px;
   font-size: 0.7em;
   font-weight: 600;
@@ -376,7 +388,8 @@
   justify-content: center;
   transition: 0.2s;
   margin-top: 3px;
-  flex-shrink: 0; /* Impede que o checkbox encolha */
+  flex-shrink: 0;
+  /* Impede que o checkbox encolha */
 }
 
 .terms-container input[type="checkbox"]:checked {
@@ -472,7 +485,8 @@
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s ease, visibility 0s linear 0.3s;
-  z-index: 1001; /* Garante que fique acima de tudo */
+  z-index: 1001;
+  /* Garante que fique acima de tudo */
 }
 
 .modal-overlay.show {
@@ -519,91 +533,109 @@
 
 /* Para tablets (até 992px) */
 @media (max-width: 992px) {
-    .banner-container,
-    .service-container,
-    .form-container {
-        width: 90%;
-    }
 
-    .rows {
-        flex-direction: column;
-        align-items: center;
-    }
+  .banner-container,
+  .service-container,
+  .form-container {
+    width: 90%;
+  }
 
-    .img-rectangle,
-    .img-rectangle-2,
-    .img-square {
-        width: 100%;
-        height: auto; /* Altura automática para manter proporção */
-        max-width: 500px; /* Limita a largura máxima da imagem */
-    }
+  .rows {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    #form-section {
-        padding: 3rem 1rem;
-    }
+  .img-rectangle,
+  .img-rectangle-2,
+  .img-square {
+    width: 100%;
+    height: auto;
+    /* Altura automática para manter proporção */
+    max-width: 500px;
+    /* Limita a largura máxima da imagem */
+  }
+
+  #form-section {
+    padding: 3rem 1rem;
+  }
 }
 
 /* Para celulares (até 576px) */
-/* Para celulares (até 576px) */
 @media (max-width: 576px) {
-    #banner {
-        height: 70vh;
-    }
-    
-    .banner-container {
-        height: auto;
-        padding-bottom: 2rem;
-        align-items: center;
-        text-align: center;
-    }
+  #banner {
+    height: 50vh;
+  }
 
-    .banner-container h1, .service-container h1, .form-container h1 {
-        font-size: 1.8rem;
-    }
+  .banner-container {
+    height: auto;
+    padding-bottom: 2rem;
+    align-items: center;
+    text-align: center;
+  }
 
-    #service-section {
-        padding: 2rem 1rem;
-    }
-    
-    /* NOVA REGRA PARA CORRIGIR O LAYOUT */
-    .rows .cols > div {
-        width: 100% !important; /* Força os componentes a ocuparem 100% da largura */
-        margin-bottom: 1.5rem; /* Adiciona um espaço entre os componentes empilhados */
-    }
+  .banner-container h1,
+  .service-container h1,
+  .form-container h1 {
+    font-size: 1.8rem;
+  }
 
-    .text-bold h2, .topic-bold h2, .topic-simple h2, .title h1 {
-        font-size: 1.5rem;
-        text-align: center;
-        margin-left: 0;
-    }
+  #service-section {
+    padding: 2rem 1rem;
+  }
 
-    .form-container {
-        width: 100%;
-        padding: 1.5rem 1rem;
-    }
-    
-    .form-container .form-row,
-    .form-container .form-row-2,
-    .form-container .form-row-3 {
-        flex-direction: column;
-        width: 100%;
-        gap: 0;
-    }
+  /* NOVA REGRA PARA CORRIGIR O LAYOUT */
+  .rows .cols>div {
+    width: 100% !important;
+    margin-bottom: 0rem;
+  }
 
-    .form-container .form-row-2 label,
-    .form-container .form-row-3 label {
-        width: 100%;
-    }
+  .rows p,
+  .cols p,
+  .rows h1,
+  .cols h1,
+  .rows h2,
+  .cols h2,
+  .rows ul,
+  .cols ul {
+    margin-bottom: 1rem;
+  }
 
-    .form-container label {
-        width: 100%;
-    }
+  .text-bold h2,
+  .topic-bold h2,
+  .topic-simple h2,
+  .title h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 0;
+  }
 
-    .form-container button {
-        width: 90%;
-    }
+  .form-container {
+    width: 100%;
+    padding: 1.5rem 1rem;
+  }
 
-    .terms-container {
-        width: 100%;
-    }
+  .form-container .form-row,
+  .form-container .form-row-2,
+  .form-container .form-row-3 {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  .form-container .form-row-2 label,
+  .form-container .form-row-3 label {
+    width: 100%;
+  }
+
+  .form-container label {
+    width: 100%;
+  }
+
+  .form-container button {
+    width: 90%;
+  }
+
+  .terms-container {
+    width: 100%;
+  }
 }

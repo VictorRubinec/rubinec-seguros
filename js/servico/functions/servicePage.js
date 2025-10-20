@@ -120,7 +120,11 @@ function createTopicElement(parent, content, className, isBold = false) {
   const ul = document.createElement("ul");
   content.itens.forEach((item) => {
     const li = document.createElement("li");
-    li.innerHTML = item;
+    if (content.itens.length > 1) {
+      li.innerHTML = "• " + item;
+    } else {
+      li.innerHTML = item;
+    }
     ul.appendChild(li);
   });
   parent.appendChild(ul);
