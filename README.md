@@ -1,12 +1,12 @@
-# Rubinec Seguros 🛡️
+# Rubinec Seguros
 
 Site institucional da **Rubinec Corretora de Seguros**, especializada em soluções personalizadas de seguros para pessoas e empresas em São Paulo.
 
-🌐 **[www.rubinecseguros.com.br](https://www.rubinecseguros.com.br)**
+**[www.rubinecseguros.com.br](https://www.rubinecseguros.com.br)**
 
 ---
 
-## 📄 Páginas
+## Páginas
 
 | Página | Descrição |
 |---|---|
@@ -17,7 +17,7 @@ Site institucional da **Rubinec Corretora de Seguros**, especializada em soluç�
 
 ---
 
-## 🚀 Tecnologias
+## Tecnologias
 
 - **HTML5** — estrutura semântica
 - **CSS3 Vanilla** — design responsivo com variáveis CSS
@@ -27,22 +27,22 @@ Site institucional da **Rubinec Corretora de Seguros**, especializada em soluç�
 
 ---
 
-## ✨ Funcionalidades
+## Funcionalidades
 
-- ✅ Design responsivo (mobile, tablet e desktop)
-- ✅ Menu mobile com animação hambúrguer
-- ✅ Cards de serviços dinâmicos (gerados via JS)
-- ✅ Formulário de cotação com validação e envio por e-mail
-- ✅ Animações de scroll-reveal com `IntersectionObserver`
-- ✅ Efeito hover nos cards de serviço
-- ✅ Loading screen com spinner
-- ✅ SEO otimizado (meta tags, Open Graph, Twitter Card, Schema.org)
-- ✅ `sitemap.xml` e `robots.txt` configurados
-- ✅ `apple-touch-icon` para iOS/Android
+- Design responsivo (mobile, tablet e desktop)
+- Menu mobile com animação hambúrguer
+- Cards de serviços dinâmicos (gerados via JS)
+- Formulário de cotação com validação e envio por e-mail
+- Animações de scroll-reveal com `IntersectionObserver`
+- Efeito hover nos cards de serviço
+- Loading screen com spinner
+- SEO otimizado (meta tags, Open Graph, Twitter Card, Schema.org)
+- `sitemap.xml` e `robots.txt` configurados
+- `apple-touch-icon` para iOS/Android
 
 ---
 
-## 📁 Estrutura
+## Estrutura
 
 ```
 rubinec-seguros/
@@ -74,7 +74,7 @@ rubinec-seguros/
 
 ---
 
-## 📦 Deploy
+## Deploy
 
 O site é hospedado via **GitHub Pages** com domínio personalizado configurado no arquivo `CNAME`.
 
@@ -84,7 +84,7 @@ www.rubinecseguros.com.br → VictorRubinec/rubinec-seguros (branch main)
 
 ---
 
-## 📞 Contato
+## Contato
 
 - **E-mail:** atendimento@rubinecseguros.com.br
 - **Telefone:** (11) 4991-3355 / (11) 97786-6520

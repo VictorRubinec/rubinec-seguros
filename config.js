@@ -7,5 +7,5 @@
 window.env = {
   EMAILJS_PUBLIC_KEY: "vb0edIpgnEmtHP5Bp",
   EMAILJS_TEMPLATE_ID: "template_injnnjc",
-  EMAILJS_SERVICE_ID: "service_aapv7s6",
+  EMAILJS_SERVICE_ID: "service_nflko6p",
 };
