@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /js/
+Disallow: /css/
+Disallow: /images/
+
+Sitemap: https://www.rubinecseguros.com.br/sitemap.xml

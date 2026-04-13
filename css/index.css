@@ -2,7 +2,7 @@
   width: 100%;
   height: 720px;
   background-image: url(../images/home/banner.jpg);
-  background-size: auto;
+  background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
   border-bottom: 3px solid var(--red);
@@ -51,13 +51,13 @@
   width: fit-content;
   text-transform: uppercase;
   font-weight: bold;
-  text-decoration: none; 
+  text-decoration: none;
   display: flex;
   align-items: center;
+  transition: background-color 0.3s;
 }
 
 .banner-link:hover {
-  transition: 0.3s;
   background-color: var(--dark-red);
 }
 
@@ -118,7 +118,8 @@
   width: 50%;
 }
 
-.about-text h1 {
+.about-text h1,
+.about-text h2 {
   font-size: 28px;
   font-weight: bold;
   text-transform: uppercase;
@@ -142,10 +143,10 @@
   font-weight: bold;
   border-radius: 16px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .about-text button:hover {
-  transition: 0.3s;
   background-color: var(--dark-red);
 }
 
@@ -167,7 +168,8 @@
   margin-bottom: 2.5rem;
 }
 
-.about-midia h1 {
+.about-midia h1,
+.about-midia h2 {
   font-size: 28px;
   font-weight: bold;
   text-transform: uppercase;
@@ -193,7 +195,7 @@
 .about-midia-link {
   background-color: var(--light-gray);
   color: var(--light-black);
-  text-decoration: none; 
+  text-decoration: none;
   border: none;
   margin: 1.2rem 0;
   padding: 16px 24px;
@@ -203,10 +205,10 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  transition: background-color 0.3s;
 }
 
 .about-midia-link:hover {
-  transition: 0.3s;
   background-color: var(--gray);
 }
 
@@ -236,7 +238,8 @@
   height: 100%;
 }
 
-.services-header h1 {
+.services-header h1,
+.services-header h2 {
   font-size: 28px;
   font-weight: bold;
   text-transform: uppercase;
@@ -311,7 +314,8 @@
   font-size: 20px;
 }
 
-.services-title h1 {
+.services-title h1,
+.services-title h2 {
   font-size: 28px;
   font-weight: bold;
   text-transform: uppercase;
@@ -335,6 +339,13 @@
   height: 340px;
   background-color: var(--white);
   border-radius: 16px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.services-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
 .services-card img {
@@ -371,10 +382,10 @@
   width: fit-content;
   text-align: center;
   border-radius: 8px;
+  transition: background-color 0.3s;
 }
 
 .services-card-text a:hover {
-  transition: 0.3s;
   background-color: var(--dark-red);
 }
 

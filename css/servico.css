@@ -124,10 +124,10 @@
   width: fit-content;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.3s;
 }
 
 .btn-contact:hover {
-  transition: 0.3s;
   background-color: var(--dark-red);
 }
 
@@ -354,6 +354,7 @@
   margin: 1rem 0;
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .form-container button:hover {

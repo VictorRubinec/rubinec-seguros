@@ -52,6 +52,7 @@ function loadServices(cards, container) {
     const serviceImage = document.createElement("img");
     serviceImage.src = card.image;
     serviceImage.alt = card.title;
+    serviceImage.loading = "lazy";
 
     const serviceCardText = document.createElement("div");
     serviceCardText.classList.add("services-card-text");
@@ -108,4 +109,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   hideLoadingScreen();
   showPage();
+
+  // ===== Scroll Reveal =====
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  document
+    .querySelectorAll(".reveal, .reveal-left, .reveal-right")
+    .forEach((el) => observer.observe(el));
 });
