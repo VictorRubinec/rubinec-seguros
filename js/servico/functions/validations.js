@@ -92,7 +92,7 @@ export function validateForm(event) {
       break;
     }
 
-    if (field !== "message" && !validateEmpty(data[field])) {
+    if (field !== "message" && field !== "terms" && !validateEmpty(data[field])) {
       showError(field, `${field} não pode estar vazio.`);
       isValid = false;
       break;
@@ -108,9 +108,11 @@ export function validateForm(event) {
     const errorLabel = document.getElementById(`${field}-label`);
     const errorMessage = document.getElementById("error-message");
 
-    if (errorLabel.classList.contains("error")) {
+    if (errorLabel && errorLabel.classList.contains("error")) {
       errorLabel.classList.remove("error");
-      errorMessage.style.display = "none";
+      if (errorMessage) {
+        errorMessage.style.display = "none";
+      }
     }
   }
 
